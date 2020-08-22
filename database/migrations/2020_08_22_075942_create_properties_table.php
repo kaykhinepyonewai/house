@@ -28,6 +28,7 @@ class CreatePropertiesTable extends Migration
             $table->string('volume');
             $table->string('owner_name');
             $table->unsignedBigInteger('user_id');
+            $table->string('phoneno');
             $table->string('address');
             $table->string('description');
             $table->string('status')->default('waiting');;

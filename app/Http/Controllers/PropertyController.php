@@ -104,6 +104,7 @@ class PropertyController extends Controller
         $property->volume = $request->volume;
         $property->owner_name = Auth::user()->name;
         $property->user_id = Auth::id();
+         $property->phoneno = $request->phoneno;
         $property->address = $request->address;
         $property->description = $request->description;
 

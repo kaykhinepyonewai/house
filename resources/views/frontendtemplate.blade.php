@@ -147,7 +147,7 @@
 
 
 
-  <footer class="footer fixed-bottom">
+  <footer class="footer {{-- fixed-bottom --}}">
       <div class="container  text-center  text-monospace">
         <p class="footertext m-0">Copyright &copy; All Right Result | Powered By <a href="http://kaykhinepyonewai.me/" class="fot"> Kay </a></p>
         
