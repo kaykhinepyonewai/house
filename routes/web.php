@@ -30,7 +30,7 @@ Route::resource('categories','CategoryController');
 // 7 (get->4 / post->1 / put->1 / delete->1)
 
 
-Route::resource('property','PropertyController');
+Route::resource('properties','PropertyController');
 
 Route::get('/','FrontendController@home')->name('homepage');
 

@@ -9,4 +9,9 @@ class Township extends Model
     protected $fillable = [
         'name',
     ];
+
+    public function properties()
+    {
+    	return $this->hasMany('App\Property');
+    }
 }

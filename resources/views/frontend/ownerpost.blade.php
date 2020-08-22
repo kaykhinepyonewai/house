@@ -16,8 +16,10 @@
 				
 			</div>
 			<div class="col-md-8">
-		<form method="POST" action="" enctype="multipart/form-data">
+		<form method="POST" action="{{route('properties.store')}}" enctype="multipart/form-data">
 			@csrf
+
+			@method('PUT')
 
 			<div class="form-group row my-5 ">
 
@@ -42,7 +44,7 @@
 
 			<div class="form-group row">
 				<label for="price" class="col-md-4 home1 ">Price Per Month:</label>
-				<input type="number" id="price"  name="price" class="form-control col-md-8 {{ $errors->first('price') ? 'border-danger' : ''}}">
+				<input type="text" id="price"  name="price" class="form-control col-md-8 {{ $errors->first('price') ? 'border-danger' : ''}}">
 				@error('discount')
 
 				<div class="alert alert-danger offset-2 col-md-9 form-control">{{ $message }}</div>
@@ -60,7 +62,7 @@
 
 			<div class="form-group row">
 				<label for="image" class="col-md-4 home1 ">Photo:</label>
-				<input type="file" name="photo[]" class="form-control-file col-md-8 home1 {{ $errors->first('photo') ? 'border border-danger' : ''}}" multiple>
+				<input type="file" name="photo" class="form-control-file col-md-8 {{ $errors->first('photo') ? 'border border-danger' : ''}}">
 				@error('photo')
 
 				<div class="alert alert-danger offset-2 col-md-9 form-control">{{ $message }}</div>

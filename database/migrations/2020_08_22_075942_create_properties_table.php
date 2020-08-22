@@ -30,7 +30,7 @@ class CreatePropertiesTable extends Migration
             $table->unsignedBigInteger('user_id');
             $table->string('address');
             $table->string('description');
-            $table->string('status');
+            $table->string('status')->default('waiting');;
             $table->timestamps();
 
 
