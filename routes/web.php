@@ -17,8 +17,16 @@ use Illuminate\Support\Facades\Route;
 //     return view('welcome');
 // });
 
+Route::middleware(['role:admin'])->group(function () 
+
+{
 
 Route::get('dashboard','BackendController@dashboard')->name('dashboard');
+
+});
+
+
+Route::resource('owner','OwnerController');
 
 Route::get('/','FrontendController@home')->name('homepage');
 

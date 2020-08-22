@@ -8,7 +8,7 @@
 @section('content')
 
 
-<div class="container bg-dark text-center pt-5" >
+{{-- <div class="container bg-dark text-center pt-5" >
     <div class="row">
       <div class="col-lg-3 col-md-4 ">
         <img src="images/door.jpg" alt="Avatar" class="avatar ">
@@ -77,5 +77,5 @@
     </div>
 
   </div>
-
+ --}}
 @endsection
