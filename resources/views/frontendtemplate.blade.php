@@ -62,9 +62,9 @@
 
   {{--  @else --}}
 
-   {{-- @yield('navUser')
+   @yield('navUser')
 
-  @endrole --}}
+ {{--  @endrole --}}
 
 
 

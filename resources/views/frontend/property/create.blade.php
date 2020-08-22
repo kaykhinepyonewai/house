@@ -60,7 +60,7 @@
 
 			<div class="form-group row">
 				<label for="image" class="col-md-4 home1 ">Photo:</label>
-				<input type="file" name="photo" class="form-control-file col-md-8 {{ $errors->first('photo') ? 'border border-danger' : ''}}">
+				<input type="file" name="photo[]" class="form-control-file col-md-8 home1 {{ $errors->first('photo') ? 'border border-danger' : ''}}" multiple>
 				@error('photo')
 
 				<div class="alert alert-danger offset-2 col-md-9 form-control">{{ $message }}</div>
@@ -160,6 +160,18 @@
 				<div class="alert alert-danger offset-2 col-md-9 form-control">{{ $message }}</div>
 				@enderror
 			</div>
+
+			<div class="form-group row">
+				<label for="volume" class="col-md-4 home1 ">Lcation:</label>
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d118392.7583218602!2d96.1003885005!3d21.981646867180523!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30cb6e8a452c71a7%3A0xe418b104e6157620!2sPatheingyi!5e0!3m2!1sen!2smm!4v1598073986553!5m2!1sen!2smm" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" class="h-50 w-50"></iframe>
+				{{-- <input type="text" id="volume"  name="volume" class="form-control col-md-8 {{ $errors->first('volume') ? 'border-danger' : ''}}"> --}}
+				@error('volume')
+
+				<div class="alert alert-danger offset-2 col-md-9 form-control">{{ $message }}</div>
+				@enderror
+			</div>
+
+
 
 
 			<div class="form-group row">
