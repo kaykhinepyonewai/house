@@ -9,7 +9,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>SB Admin 2 - @yield('title')</title>
+  <title>SB Admin 2 -  @yield('title',)</title>
 
   <!-- Custom fonts for this template-->
   <link href="{{asset('backend/vendor/fontawesome-free/css/all.min.css')}}" rel="stylesheet" type="text/css">
@@ -41,10 +41,12 @@
 
       <!-- Nav Item - Dashboard -->
       <li class="nav-item active">
-        <a class="nav-link" href="index.html">
+        <a class="nav-link" href="{{route('dashboard')}}">
           <i class="fas fa-fw fa-tachometer-alt"></i>
           <span>Dashboard</span></a>
       </li>
+
+   
 
       <!-- Divider -->
       <hr class="sidebar-divider">
@@ -56,11 +58,12 @@
 
       <!-- Nav Item - Pages Collapse Menu -->
       <li class="nav-item">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-          <i class="fas fa-fw fa-cog"></i>
-          <span>Category</span>
+        <a class="nav-link collapsed" href="{{-- {{route('items.index')}} --}}" aria-expanded="true" aria-controls="collapseTwo">
+          {{-- <i class="fas fa-fw fa-cog"></i> --}}
+          <i class="fas fa-sitemap"></i>
+          <span>Items</span>
         </a>
-       {{--  <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+        {{-- <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
             <h6 class="collapse-header">Custom Components:</h6>
             <a class="collapse-item" href="buttons.html">Buttons</a>
@@ -71,11 +74,12 @@
 
       <!-- Nav Item - Utilities Collapse Menu -->
       <li class="nav-item">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities" aria-expanded="true" aria-controls="collapseUtilities">
-          <i class="fas fa-fw fa-wrench"></i>
-          <span>Township</span>
+        <a class="nav-link collapsed" href="{{-- {{route('orders.index')}} --}}" aria-expanded="true" aria-controls="collapseUtilities">
+          {{-- <i class="fas fa-fw fa-wrench"></i> --}}
+          <i class="fas fa-truck"></i>
+          <span>Orders</span>
         </a>
-        {{-- <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
+      {{--   <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
             <h6 class="collapse-header">Custom Utilities:</h6>
             <a class="collapse-item" href="utilities-color.html">Colors</a>
@@ -87,20 +91,20 @@
       </li>
 
       <!-- Divider -->
-      {{-- <hr class="sidebar-divider"> --}}
+      <hr class="sidebar-divider">
 
       <!-- Heading -->
-     {{--  <div class="sidebar-heading">
+      <div class="sidebar-heading">
         Addons
-      </div> --}}
+      </div>
 
       <!-- Nav Item - Pages Collapse Menu -->
-     {{--  <li class="nav-item">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages" aria-expanded="true" aria-controls="collapsePages">
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="{{route('townships.index')}}" aria-expanded="true" aria-controls="collapsePages">
           <i class="fas fa-fw fa-folder"></i>
-          <span>Pages</span>
+          <span>Townships</span>
         </a>
-        <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
+      {{--   <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
             <h6 class="collapse-header">Login Screens:</h6>
             <a class="collapse-item" href="login.html">Login</a>
@@ -111,21 +115,21 @@
             <a class="collapse-item" href="404.html">404 Page</a>
             <a class="collapse-item" href="blank.html">Blank Page</a>
           </div>
-        </div>
-      </li> --}}
+        </div> --}}
+      </li>
 
       <!-- Nav Item - Charts -->
-     {{--  <li class="nav-item">
-        <a class="nav-link" href="charts.html">
+      <li class="nav-item">
+        <a class="nav-link" href="{{route('categories.index')}}">
           <i class="fas fa-fw fa-chart-area"></i>
-          <span>Charts</span></a>
-      </li> --}}
+          <span>Categories</span></a>
+      </li>
 
-      <!-- Nav Item - Tables -->
-     {{--  <li class="nav-item">
-        <a class="nav-link" href="tables.html">
+   {{--    <!-- Nav Item - Tables -->
+      <li class="nav-item">
+        <a class="nav-link" href="{{route('subcategories.index')}}">
           <i class="fas fa-fw fa-table"></i>
-          <span>Tables</span></a>
+          <span>Subcategories</span></a>
       </li> --}}
 
       <!-- Divider -->
@@ -139,7 +143,7 @@
     </ul>
     <!-- End of Sidebar -->
 
-<!-- Content Wrapper -->
+    <!-- Content Wrapper -->
     <div id="content-wrapper" class="d-flex flex-column">
 
       <!-- Main Content -->
@@ -303,7 +307,7 @@
               </a>
               <!-- Dropdown - User Information -->
               <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
-                <a class="dropdown-item" href="#">
+                <a class="dropdown-item" href="{{-- {{route('profile')}} --}}">
                   <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
                   Profile
                 </a>
@@ -315,10 +319,23 @@
                   <i class="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i>
                   Activity Log
                 </a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
-                  <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
-                  Logout
+                <div class="dropdown-item" aria-labelledby="navbarDropdown">
+              
+
+              <a class="dropdown-item" href="{{-- {{ route('logout') }} --}}"
+              onclick="event.preventDefault();
+              document.getElementById('logout-form').submit();">
+              <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
+              {{ __('Logout') }}
+            </a>
+
+              
+            <form id="logout-form" action="{{-- {{ route('logout') }} --}}" method="POST" style="display: none;">
+              @csrf
+            </form>
+          </div>
+                 {{--  <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
+                  Logout --}}
                 </a>
               </div>
             </li>
@@ -328,18 +345,7 @@
         </nav>
         <!-- End of Topbar -->
 
-        <!-- Begin Page Content -->
-        @yield('content')
-        <!-- /.container-fluid -->
-
-      </div>
-      <!-- End of Main Content -->
-
-
-
-
-
-
+        @yield('content');
 
       <!-- Footer -->
       <footer class="sticky-footer bg-white">
@@ -398,6 +404,7 @@
   <script src="{{asset('backend/js/demo/chart-area-demo.js')}}"></script>
   <script src="{{asset('backend/js/demo/chart-pie-demo.js')}}"></script>
   @yield('script')
+
 </body>
 
 </html>

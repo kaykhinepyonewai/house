@@ -24,7 +24,9 @@ Route::middleware(['role:admin'])->group(function ()
 Route::get('dashboard','BackendController@dashboard')->name('dashboard');
 
 });
-
+// 7 (get->4 / post->1 / put->1 / delete->1)
+Route::resource('townships','TownshipController');
+Route::resource('categories','CategoryController');
 
 Route::resource('owner','OwnerController');
 
