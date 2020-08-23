@@ -60,10 +60,10 @@
 
       <!-- Nav Item - Pages Collapse Menu -->
       <li class="nav-item">
-        <a class="nav-link collapsed" href="{{-- {{route('items.index')}} --}}" aria-expanded="true" aria-controls="collapseTwo">
+        <a class="nav-link collapsed" href="{{route('waiting')}}" aria-expanded="true" aria-controls="collapseTwo">
           {{-- <i class="fas fa-fw fa-cog"></i> --}}
           <i class="fas fa-sitemap"></i>
-          <span>Items</span>
+          <span>Waiting List</span>
         </a>
         {{-- <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
