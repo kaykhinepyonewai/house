@@ -31,7 +31,7 @@ class CreatePropertiesTable extends Migration
             $table->string('phoneno');
             $table->string('address');
             $table->string('description');
-            $table->string('status')->default('waiting');;
+            $table->string('status')->default('waiting');
             $table->timestamps();
 
 

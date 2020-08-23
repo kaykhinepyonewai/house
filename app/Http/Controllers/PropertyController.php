@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 use App\Township;
 use App\Category;
 use App\Property;
-use Illuminate\Support\Facades\Auth;;
+use Illuminate\Support\Facades\Auth;
 
 class PropertyController extends Controller
 {
@@ -17,6 +17,8 @@ class PropertyController extends Controller
      */
     public function index()
     {
+        // $properties=Property::where([['status','approve'],['user_id',Auth::id()]])->get();
+        // dd($properties);
        return view('frontend.properties.index');
     }
 

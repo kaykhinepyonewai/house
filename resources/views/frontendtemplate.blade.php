@@ -161,7 +161,10 @@
 
 
   <script src="{{asset('frontend/jquery/jquery.min.js')}}"></script>
+  <script type="text/javascript" src="{{asset('frontend/bootstrap/js/jquery.min.js')}}"></script>
   <script src="{{asset('frontend/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+
+   @yield('script')
 
 
 

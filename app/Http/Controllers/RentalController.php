@@ -3,6 +3,10 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Property;
+use App\Rental;
+use App\User;
+use Illuminate\Support\Facades\Auth;
 
 class RentalController extends Controller
 {
@@ -13,7 +17,7 @@ class RentalController extends Controller
      */
     public function index()
     {
-        //
+       
     }
 
     /**
@@ -23,7 +27,7 @@ class RentalController extends Controller
      */
     public function create()
     {
-        //
+         return view('frontend.rentals.create');
     }
 
     /**
@@ -34,7 +38,33 @@ class RentalController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $request->validate(
+        [
+            
+            'phoneno' => 'required',
+             'months' => 'required',
+            'planedate' => 'required',
+            'total' => 'required',
+            'propertyid'=> 'required'
+
+        ]);
+
+        // dd(Auth::user()->name);
+
+        $rental = new Rental;
+        $rental->rentalno = uniqid();
+        $rental->customer_name = Auth::user()->name;
+        $rental->phoneno = $request->phoneno;
+        $rental->rentalperiod = $request->months;
+        $rental->plandate = $request->planedate;
+        $rental->totalprice = $request->total;
+        $rental->property_id = $request->propertyid;
+        $rental->user_id = Auth::id();
+
+
+        $rental->save();
+
+
     }
 
     /**
@@ -45,7 +75,9 @@ class RentalController extends Controller
      */
     public function show($id)
     {
-        //
+        $property = Property::find($id);
+        // dd($property);
+        return view('frontend.rentals.show',compact('property'));
     }
 
     /**
@@ -56,7 +88,7 @@ class RentalController extends Controller
      */
     public function edit($id)
     {
-        //
+         // return view('frontend.rentals.edit');
     }
 
     /**

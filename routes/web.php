@@ -46,6 +46,8 @@ Route::resource('categories','CategoryController');
 
 Route::resource('properties','PropertyController');
 
+Route::resource('rentals','RentalController');
+
 Route::get('/','FrontendController@home')->name('homepage');
 
 Auth::routes();

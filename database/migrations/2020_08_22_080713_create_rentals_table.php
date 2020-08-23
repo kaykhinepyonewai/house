@@ -22,7 +22,7 @@ class CreateRentalsTable extends Migration
             $table->date('plandate');
             $table->integer('totalprice');
             $table->unsignedBigInteger('property_id');
-            $table->string('status');
+            $table->string('status')->default('request');
             $table->unsignedBigInteger('user_id');
             $table->timestamps();
 
