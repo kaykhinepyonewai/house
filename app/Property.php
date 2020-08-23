@@ -21,4 +21,10 @@ class Property extends Model
     	return $this->belongsTo('App\Township');
 
     }
+
+    public function user($value='')     //appear object ->belongsTo
+    {
+        return $this->belongsTo('App\User');
+
+    }
 }

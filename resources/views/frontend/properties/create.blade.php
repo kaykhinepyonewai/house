@@ -1,4 +1,4 @@
-@extends('../frontendtemplate')
+@extends('frontendtemplate')
 
 
 
@@ -43,7 +43,7 @@
 
 			<div class="form-group row">
 				<label for="price" class="col-md-4 home1 ">Price Per Month:</label>
-				<input type="number" id="price"  name="price" class="form-control col-md-8 {{ $errors->first('price') ? 'border-danger' : ''}}">
+				<input type="text" id="price"  name="price" class="form-control col-md-8 {{ $errors->first('price') ? 'border-danger' : ''}}">
 				@error('discount')
 
 				<div class="alert alert-danger offset-2 col-md-9 form-control">{{ $message }}</div>
