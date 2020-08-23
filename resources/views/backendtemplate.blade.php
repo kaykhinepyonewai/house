@@ -76,8 +76,8 @@
       <li class="nav-item">
         <a class="nav-link collapsed" href="{{-- {{route('orders.index')}} --}}" aria-expanded="true" aria-controls="collapseUtilities">
           {{-- <i class="fas fa-fw fa-wrench"></i> --}}
-          <i class="fas fa-truck"></i>
-          <span>Orders</span>
+          <i class="fas fa-home"></i>
+          <span>Rental</span>
         </a>
       {{--   <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
@@ -100,7 +100,7 @@
 
       <!-- Nav Item - Pages Collapse Menu -->
       <li class="nav-item">
-        <a class="nav-link collapsed" href="{{route('townships.index')}}" aria-expanded="true" aria-controls="collapsePages">
+        <a class="nav-link collapsed" href="{{-- {{route('townships.index')}} --}}" aria-expanded="true" aria-controls="collapsePages">
           <i class="fas fa-fw fa-folder"></i>
           <span>Townships</span>
         </a>
