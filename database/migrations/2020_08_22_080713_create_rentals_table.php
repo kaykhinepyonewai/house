@@ -21,6 +21,7 @@ class CreateRentalsTable extends Migration
             $table->integer('rentalperiod');
             $table->date('plandate');
             $table->integer('totalprice');
+            $table->integer('owner_id');
             $table->unsignedBigInteger('property_id');
             $table->string('status')->default('request');
             $table->unsignedBigInteger('user_id');

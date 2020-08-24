@@ -49,7 +49,7 @@
       </li>
        <hr class="sidebar-divider my-0">
       <li class="nav-item active">
-        <a class="nav-link" href="#">
+        <a class="nav-link" href="{{route('rentallists.index')}}">
           <i class="fas fa-fw fa-tachometer-alt"></i>
           <span>Rental List</span></a>
       </li>
@@ -73,7 +73,7 @@
 	<!-- Item List Table -->
 	<div class="card shadow mb-4">
 		<div class="card-header py-3">
-			<h6 class="m-0 font-weight-bold text-primary">Owner Post List(Approve)</h6>
+			<h6 class="m-0 font-weight-bold text-primary">Owner Post List(Waiting)</h6>
 		</div>
 		<div class="card-body">
 			<div class="table-responsive">
@@ -81,8 +81,9 @@
 					<thead>
 						<tr>
 							<th>#</th>
+							<th>Code No</th>
 							<th>Owner Name</th>
-							<th>Phone No</th>
+							
 						<!-- 	<th>Discount</th> -->
 							<th>Post Name</th>
 							<th>Photo</th>
@@ -93,8 +94,9 @@
 					<tfoot>
 						<tr>
 							<th>#</th>
+							<th>Code No</th>
 							<th>Owner Name</th>
-							<th>Phone No</th>
+							
 						<!-- 	<th>Discount</th> -->
 							<th>Post Name</th>
 							<th>Photo</th>
@@ -107,12 +109,13 @@
 						@foreach($properties as $property)
 						<tr>
 							<td>{{$i++}}</td>
+							<td>{{$property->codeno}}
+
+							</td>
 							<td>{{$property->owner_name}}
 
 							</td>
-							<td>{{$property->phoneno}}
-
-							</td>
+							
 							<td>{{$property->name}}
 
 							</td>

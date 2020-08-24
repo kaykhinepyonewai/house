@@ -70,7 +70,7 @@ nav.navbar-toggler
 	transition-duration: .3s;
 }
 
-.card:hover
+.cardan:hover
 {
 	opacity: .8;
 	transform: translate(0,-8px);                 /*horizontal(normal) and vertical(uper(take -) , lower (take +))*/

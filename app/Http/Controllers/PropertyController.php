@@ -18,8 +18,12 @@ class PropertyController extends Controller
     public function index()
     {
 
+
         // $properties=Property::where([['status','approve'],['user_id',Auth::id()]])->get();
         // dd($properties);
+
+       // $properties=Property::where([['status','approve'],['user_id',Auth::id()]])->get();
+       //  // dd($properties);
        // return view('frontend.properties.index');
 
 
@@ -131,7 +135,7 @@ class PropertyController extends Controller
 
 
         // Redirect
-        return redirect()->route('frontend.properties.index');
+        // return redirect()->route('frontend.properties.index');
 
 
         

@@ -22,8 +22,10 @@
 
 			<div class="form-group row my-5 ">
 
+{{-- 
+				$codeno = "CODE_".mt_rand(100000,999999); --}}
 				<label for="code" class="col-md-4 home1 ">CodeNo:</label>
-				<input type="text" id="code"  name="codeno" class="form-control col-md-8 {{ $errors->first('codeno') ? 'border-danger' : '' }}">
+				<input type="text" id="code"  name="codeno" value="" placeholder="CODE_00001" class="form-control col-md-8 {{ $errors->first('codeno') ? 'border-danger' : '' }}">
 
 				@error('codeno')
 
