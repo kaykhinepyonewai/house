@@ -4,7 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Property;
-
+use App\Rental;
+use App\User;
 use Illuminate\Support\Facades\Auth;
 
 
@@ -29,6 +30,13 @@ class FrontendController extends Controller
                     
         // dd($properties);
        return view('frontend.ownerwaiting',compact('properties'));
+    }
+    public function profile($value='')
+    {
+       $rentals = Rental::where('user_id',Auth::id())->get();
+      // dd($rentals);
+      return view('frontend.profile',compact('rentals'));
+      
     }
 
    

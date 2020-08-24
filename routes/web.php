@@ -35,6 +35,10 @@ Route::resource('approves','WaitingController');
 // simple controller---- view waiting list in backgroundcontroller 
 Route::get('waitingdetail/{id}','BackendController@waitingdetail')->name('waitingdetail');
 
+
+Route::resource('adminrentals','AdminRentalController');
+
+
 Route::resource('townships','TownshipController');
 Route::resource('categories','CategoryController');
 
@@ -43,7 +47,7 @@ Route::resource('categories','CategoryController');
 
 // 7 (get->4 / post->1 / put->1 / delete->1)
 // Owner Waiting
-
+Route::get('profile','FrontendController@profile')->name('profile');
 
 
 Route::resource('properties','PropertyController');

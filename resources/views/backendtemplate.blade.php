@@ -76,7 +76,7 @@
 
       <!-- Nav Item - Utilities Collapse Menu -->
       <li class="nav-item">
-        <a class="nav-link collapsed" href="{{-- {{route('orders.index')}} --}}" aria-expanded="true" aria-controls="collapseUtilities">
+        <a class="nav-link collapsed" href="{{route('adminrentals.index')}}" aria-expanded="true" aria-controls="collapseUtilities">
           {{-- <i class="fas fa-fw fa-wrench"></i> --}}
           <i class="fas fa-home"></i>
           <span>Rental</span>

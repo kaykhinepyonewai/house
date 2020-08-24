@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Property;
+use App\Rental;
 
 class BackendController extends Controller
 {
@@ -26,6 +27,13 @@ class BackendController extends Controller
    	 $propertry= Property::find($id);
    	 // dd($propertry);
    	return view('backend.ownerpost.waitingdetail',compact('propertry'));
+   }
+
+   public function rentaldetail($value='')
+   {
+      $rentals = Rental::where('status','approve')->get();
+      // dd($rentals);
+      return view('backend.rentaldetail',compact('rentals'));
    }
 
 
