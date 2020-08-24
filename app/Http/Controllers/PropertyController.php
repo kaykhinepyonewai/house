@@ -17,11 +17,11 @@ class PropertyController extends Controller
      */
     public function index()
     {
-<<<<<<< HEAD
+
         // $properties=Property::where([['status','approve'],['user_id',Auth::id()]])->get();
         // dd($properties);
-       return view('frontend.properties.index');
-=======
+       // return view('frontend.properties.index');
+
 
         // $name = new Property;
         // $name->owner_name = Auth::user()->name;
@@ -33,7 +33,7 @@ class PropertyController extends Controller
        return view('frontend.properties.index',compact('properties'));
 
 
->>>>>>> 1019789d31d752dd1859c2f32b7d87d9a6911398
+
     }
 
     /**
