@@ -46,7 +46,7 @@
               {{ __('Logout') }}
             </a>
 
-             <a class="dropdown-item" href="{{-- {{ route('profilepage') }} --}}"
+             <a class="dropdown-item" href="{{ route('profile') }}"
             >
               {{ __('Profile') }}
             </a>

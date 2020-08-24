@@ -3,6 +3,7 @@
 
 
 @include ('frontend.nav')
+@include ('frontend.navUser')
 
 @section('content')
 <div class="" style="margin-top: 100px">

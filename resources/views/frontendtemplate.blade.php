@@ -178,7 +178,7 @@
 
 
     <!-- Bootstrap core JavaScript-->
-  <script src="{{asset('frontend/vendor/jquery/jquery.min.js')}}"></script>
+  {{-- <script src="{{asset('frontend/vendor/jquery/jquery.min.js')}}"></script> --}}
 
    {{-- <script src="{{asset('frontend/bootstrap/js/jquery.min.js')}}"></script> --}}
 
