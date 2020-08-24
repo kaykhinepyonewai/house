@@ -9,7 +9,7 @@
 <div class="" style="margin-top: 100px">
 
 	<h2 class="d-inline-block badge-dark pl-5 ">Property List</h2>
-	<a href="{{route('properties.create')}}" class="btn btn-outline-info float-right ">
+	<a href="{{route('properties.create')}}" class="btn btn-dark float-right mr-4 ">
 	<i class="fas fa-plus fa-sm text-white-50"></i>Add Properties</a>
 
 	
@@ -74,7 +74,7 @@
 	<!-- Item List Table -->
 	<div class="card shadow mb-4">
 		<div class="card-header py-3">
-			<h6 class="m-0 font-weight-bold text-primary">Rental List (Request)</h6>
+			<h6 class="m-0 font-weight-bold ">Rental List (Request)</h6>
 		</div>
 		<div class="card-body">
 			<div class="table-responsive">
@@ -82,14 +82,10 @@
 					<thead>
 						<tr>
 							<th>#</th>
-							{{-- <th>Rental No</th> --}}
 							<th>Property No</th>
 							<th>Customer Name</th>
 							<th>Phone No</th>
-				
 							<th>Plan Date</th>
-							
-							
 							<th>Total Price</th>
 							<th>Rental Period</th>
 							<th>Action</th>
@@ -99,7 +95,6 @@
 						<tr>
 							<th>#</th>
 							<th>Customer Name</th>
-							{{-- <th>Rental No</th> --}}
 							<th>Property No</th>
 							<th>Phone No</th>
 					

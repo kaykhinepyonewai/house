@@ -73,6 +73,8 @@ class WaitingController extends Controller
          $propertry = Property::find($id);
           $propertry->status= $request->status;
             $propertry->save();
+
+            return redirect()->route('waiting');
     }
 
     /**

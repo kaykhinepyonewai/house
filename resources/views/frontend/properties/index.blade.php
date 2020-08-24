@@ -8,7 +8,7 @@
 <div class="" style="margin-top: 100px">
 
 	<h2 class="d-inline-block badge-dark pl-5 ">Property List</h2>
-	<a href="{{route('properties.create')}}" class="btn btn-outline-info float-right ">
+	<a href="{{route('properties.create')}}" class="btn btn-dark float-right mr-4 ">
 	<i class="fas fa-plus fa-sm text-white-50"></i>Add Properties</a>
 
 	
@@ -73,7 +73,7 @@
 	<!-- Item List Table -->
 	<div class="card shadow mb-4">
 		<div class="card-header py-3">
-			<h6 class="m-0 font-weight-bold text-primary">Owner Post List(Approve)</h6>
+			<h6 class="m-0 font-weight-bold">Owner Post List(Approve)</h6>
 		</div>
 		<div class="card-body">
 			<div class="table-responsive">
@@ -96,7 +96,7 @@
 							<th>#</th>
 							<th>Code No</th>
 							<th>Owner Name</th>
-							<th>Phone No</th>
+							
 						<!-- 	<th>Discount</th> -->
 							<th>Post Name</th>
 							<th>Photo</th>
@@ -121,7 +121,7 @@
 							</td>
 
 							<td>
-								<img src="{{asset($property->mainphoto)}}" class="h-25 w-50">
+								<img src="{{asset($property->mainphoto)}}" class="img-fluid w-100 h-25">
 
 							</td>
 
@@ -134,11 +134,11 @@
 							<td>
 
 								{{-- <a href="" class="btn btn-warning btn-sm">Confirm</a> --}}
-								<form method="POST" action="#" onsubmit="return confirm('Are you sure?')" class="d-inline-block">
+								<form method="POST" action="{{route('rentallists.update',$property->id)}}" onsubmit="return confirm('Are you sure?')" class="d-block">
 								@csrf
 								@method('PUT')
-								<input type="hidden" name="status" value="approve">
-								<input type="submit" name="btnsubmit" value="Confirm" class="btn btn-outline-success btn-sm">
+								<input type="hidden" name="status" value="close">
+								<input type="submit" name="btnsubmit" value="Close" class="btn btn-dark btn-sm d-inline-block">
 							</form>
 
 

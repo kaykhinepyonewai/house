@@ -3,16 +3,17 @@
 
 
 @include ('frontend.nav')
+@include ('frontend.navUser')
 @section('content')
 
 	<div class="container my-5">
 
-	<div class="d-sm-flex align-items-center justify-content-between mb-4">
+	{{-- <div class="d-sm-flex align-items-center justify-content-between mb-4">
 		<h1 class="h3 mb-0 text-gray-800">Rental List Detail</h1>
-		<a href="{{-- {{route('waiting')}} --}}" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-backward fa-sm text-white-50"></i> Go Back</a>
-	</div>
+		<a href="{{route('waiting')}}" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-backward fa-sm text-white-50"></i> Go Back</a>
+	</div> --}}
 		
-		<div class="row">
+		<div class="row py-5">
 			<div class="col-md-5 row">
 				<div class="col-md-12">
 				<img src="{{asset($property->mainphoto)}}" class="w-100 h-100">
@@ -104,8 +105,8 @@
 						<label for="phoneno" class="col-md-4 home1 ">Phone No:</label>
 						<input type="text" id="phoneno"  name="phoneno" class="form-control col-md-8 {{ $errors->first('phoneno') ? 'border-danger' : ''}}">
 						@error('phoneno')
-
-						<div class="alert alert-danger offset-2 col-md-9 form-control">{{ $message }}</div>
+						<div class="col-md-4"></div>
+						<div class="alert alert-danger offset-4 col-md-8 form-control">{{ $message }}</div>
 						@enderror
 					</div>
 
@@ -118,7 +119,7 @@
 						<input type="date" id="planedate"  name="planedate" class="form-control col-md-8 {{ $errors->first('name') ? 'border-danger' : '' }}">
 						@error('planedate')
 
-						<div class="alert alert-danger offset-2 col-md-9 form-control">{{ $message }}</div>
+						<div class="alert alert-danger offset-4 col-md-9 form-control">{{ $message }}</div>
 						@enderror
 					</div>
 
@@ -153,23 +154,25 @@
 						<input type="text" id="total"  name="total"   class="form-control total  col-md-8 {{ $errors->first('price') ? 'border-danger' : ''}}" readonly="true">
 						@error('total')
 
-						<div class="alert alert-danger offset-2 col-md-9 form-control">{{ $message }}</div>
+						<div class="alert alert-danger offset-4 col-md-9 form-control">{{ $message }}</div>
 						@enderror
 					</div>
 
-					
-					
-
-					
-
-					
-
-					
-					
+					 @role('customer')
 					<div class="form-group row">
 						<div class="col-md-4"></div>
-						<button type="submit" class="btn btn-outline-dark">Rental</button>
+						<button type="submit" class="btn btn-dark">Rental Properties</button>
 					</div>
+
+					@else
+					<div class="form-group row">
+						<div class="col-md-4"></div>
+						<a href="{{route('login')}}" type="submit" class="btn btn-dark">Rental Now To Login</a>
+					</div>
+					{{-- <a href="{{route('login')}}" class="btn btn-outline-light text-dark home py-5 buy_now">Rental Now To Login</a> --}}
+					@endrole
+
+
 
 				</form>
 			</div>

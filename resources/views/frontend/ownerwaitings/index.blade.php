@@ -8,7 +8,7 @@
 <div class="" style="margin-top: 100px">
 
 	<h2 class="d-inline-block badge-dark pl-5 ">Property List</h2>
-	<a href="{{route('properties.create')}}" class="btn btn-outline-info float-right ">
+	<a href="{{route('properties.create')}}" class="btn btn-dark float-right mr-3">
 	<i class="fas fa-plus fa-sm text-white-50"></i>Add Properties</a>
 
 	
@@ -73,7 +73,7 @@
 	<!-- Item List Table -->
 	<div class="card shadow mb-4">
 		<div class="card-header py-3">
-			<h6 class="m-0 font-weight-bold text-primary">Owner Post List(Waiting)</h6>
+			<h6 class="m-0 font-weight-bold ">Owner Post List(Waiting)</h6>
 		</div>
 		<div class="card-body">
 			<div class="table-responsive">
@@ -83,8 +83,6 @@
 							<th>#</th>
 							<th>Code No</th>
 							<th>Owner Name</th>
-							
-						<!-- 	<th>Discount</th> -->
 							<th>Post Name</th>
 							<th>Photo</th>
 							<th>Address</th>
@@ -96,8 +94,6 @@
 							<th>#</th>
 							<th>Code No</th>
 							<th>Owner Name</th>
-							
-						<!-- 	<th>Discount</th> -->
 							<th>Post Name</th>
 							<th>Photo</th>
 							<th>Address</th>
@@ -121,7 +117,7 @@
 							</td>
 
 							<td>
-								<img src="{{asset($property->mainphoto)}}" class="h-25 w-50">
+								<img src="{{asset($property->mainphoto)}}" class="img-fluid w-100 h-25">
 
 							</td>
 
@@ -132,6 +128,8 @@
 
 							
 							<td>
+
+								
 
 
 

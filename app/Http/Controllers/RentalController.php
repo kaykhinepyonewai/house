@@ -67,6 +67,8 @@ class RentalController extends Controller
 
         $rental->save();
 
+        // return redirect()->route('frontend/home');
+
 
     }
 
@@ -106,6 +108,8 @@ class RentalController extends Controller
         $rental = Rental::find($id);
         $rental->status= $request->status;
         $rental->save();
+        return redirect()->route('rentallists.index');
+
     }
 
     /**

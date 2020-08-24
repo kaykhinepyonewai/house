@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Rental;
+use App\Property;
 
 use Illuminate\Support\Facades\Auth;
 
@@ -17,7 +18,6 @@ class RentalListController extends Controller
     public function index()
     {
         $rentals = Rental::where([['owner_id',Auth::id()],['status','request']])->get();
-        // Property::where([['status','approve'],['user_id',Auth::id()]])->get();
         // dd($rentals);
         return view('frontend.rentallists.index',compact('rentals'));
     }
@@ -74,9 +74,13 @@ class RentalListController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
-    }
+         $propertry = Property::find($id);
+         $propertry->status= $request->status;
+         $propertry->save();
+         return redirect()->route('properties.index');
 
+    }
+ 
     /**
      * Remove the specified resource from storage.
      *

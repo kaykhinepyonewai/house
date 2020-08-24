@@ -65,16 +65,16 @@
     
   </nav> --}}
 
-  {{-- @role('owner') --}}
+  @role('owner')
   
 
    @yield('nav')
 
-  {{--  @else --}}
+   @else
 
-  {{--  @yield('navUser') --}}
+   @yield('navUser')
 
- {{--  @endrole --}}
+  @endrole
 
 
 
@@ -179,6 +179,10 @@
 
     <!-- Bootstrap core JavaScript-->
   <script src="{{asset('frontend/vendor/jquery/jquery.min.js')}}"></script>
+
+   {{-- <script src="{{asset('frontend/bootstrap/js/jquery.min.js')}}"></script> --}}
+
+
   <script src="{{asset('frontend/vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
 
   <!-- Core plugin JavaScript-->

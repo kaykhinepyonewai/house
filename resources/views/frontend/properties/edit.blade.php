@@ -63,7 +63,7 @@
 				<label for="image" class="col-md-4 home1 ">Main Photo:</label>
 				<input type="file" name="p1" class="form-control-file col-md-8 home1 {{ $errors->first('photo') ? 'border border-danger' : ''}}" multiple>
 				<div class="col-md-4"></div>
-				<img src="{{asset($property->mainphoto)}}" >
+				<img src="{{asset($property->mainphoto)}}"  style="width: 300px; height: 200px" class="py-4">
 				<input type="hidden" name="oldp1" value="{{$property->mainphoto}}">
 				@error('photo')
 
@@ -76,7 +76,7 @@
 				<label for="image" class="col-md-4 home1 ">Inside Photo:</label>
 				<input type="file" name="p2" class="form-control-file col-md-8 home1 {{ $errors->first('photo') ? 'border border-danger' : ''}}" multiple>
 				<div class="col-md-4"></div>
-				<img src="{{asset($property->inphoto)}}">
+				<img src="{{asset($property->inphoto)}}" style="width: 300px; height: 200px" class="py-4">
 				<input type="hidden" name="oldp2" value="{{$property->inphoto}}">
 				@error('photo')
 
@@ -89,7 +89,7 @@
 				<label for="image" class="col-md-4 home1 ">Room Photo:</label>
 				<input type="file" name="p3" class="form-control-file col-md-8 home1 {{ $errors->first('photo') ? 'border border-danger' : ''}}" multiple>
 				<div class="col-md-4"></div>
-				<img src="{{asset($property->roomphoto)}}">
+				<img src="{{asset($property->roomphoto)}}" style="width: 300px; height: 200px" class="py-4">
 				<input type="hidden" name="oldp3" value="{{$property->roomphoto}}">
 				@error('photo')
 
@@ -200,7 +200,7 @@
 
 			<div class="form-group row">
 				<div class="col-md-4"></div>
-				<button type="submit" class="btn btn-outline-info">Update</button>
+				<button type="submit" class="btn btn-dark">Update Property</button>
 			</div>
 
 		</form>

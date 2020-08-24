@@ -15,7 +15,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="{{route('properties.create')}}">Property</a>
+            <a class="nav-link" href="{{route('properties.index')}}">Property</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">About</a>
