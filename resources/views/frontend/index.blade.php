@@ -49,7 +49,7 @@
       </li>
        <hr class="sidebar-divider my-0">
       <li class="nav-item active">
-        <a class="nav-link" href="{{route('rentallists.index')}}">
+        <a class="nav-link" href="#">
           <i class="fas fa-fw fa-tachometer-alt"></i>
           <span>Rental List</span></a>
       </li>
@@ -81,9 +81,8 @@
 					<thead>
 						<tr>
 							<th>#</th>
-							<th>Code No</th>
 							<th>Owner Name</th>
-							
+							<th>Phone No</th>
 						<!-- 	<th>Discount</th> -->
 							<th>Post Name</th>
 							<th>Photo</th>
@@ -94,7 +93,6 @@
 					<tfoot>
 						<tr>
 							<th>#</th>
-							<th>Code No</th>
 							<th>Owner Name</th>
 							<th>Phone No</th>
 						<!-- 	<th>Discount</th> -->
@@ -109,13 +107,12 @@
 						@foreach($properties as $property)
 						<tr>
 							<td>{{$i++}}</td>
-							<td>{{$property->codeno}}
-
-							</td>
 							<td>{{$property->owner_name}}
 
 							</td>
-							
+							<td>{{$property->phoneno}}
+
+							</td>
 							<td>{{$property->name}}
 
 							</td>
@@ -133,17 +130,10 @@
 							
 							<td>
 
-								{{-- <a href="" class="btn btn-warning btn-sm">Confirm</a> --}}
-								<form method="POST" action="#" onsubmit="return confirm('Are you sure?')" class="d-inline-block">
-								@csrf
-								@method('PUT')
-								<input type="hidden" name="status" value="approve">
-								<input type="submit" name="btnsubmit" value="Confirm" class="btn btn-outline-success btn-sm">
-							</form>
 
 
 
-								<a href="{{route('properties.edit',$property->id)}}" class="btn btn-outline-info btn-sm">Edit</a>
+								<a href="{{route('ownerwaitings.edit',$property->id)}}" class="btn btn-outline-info">Edit</a>
 
 								{{-- <form method="POST" action="{{route('categories.destroy',$category->id)}}" onsubmit="return confirm('Are you sure delete?')" class="d-inline-block"> --}}
 								{{-- 	@csrf
@@ -168,8 +158,6 @@
 
 </div>
 
-@endsection
-
 				{{-- 
 					</div>
 
@@ -191,3 +179,4 @@
 
 
 
+@endsection

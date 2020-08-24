@@ -99,6 +99,7 @@
 					{{-- @method('PUT') --}}
 
 					<input type="hidden" name="propertyid" value="{{$property->id}}">
+					<input type="hidden" name="ownerid" value="{{$property->user_id}}">
 					<div class="form-group row">
 						<label for="phoneno" class="col-md-4 home1 ">Phone No:</label>
 						<input type="text" id="phoneno"  name="phoneno" class="form-control col-md-8 {{ $errors->first('phoneno') ? 'border-danger' : ''}}">

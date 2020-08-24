@@ -22,6 +22,11 @@ class Property extends Model
 
     }
 
+     public function rental()
+    {
+        return $this->hasMany('App\Rental');
+    }
+
     public function user($value='')     //appear object ->belongsTo
     {
         return $this->belongsTo('App\User');

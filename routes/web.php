@@ -48,6 +48,8 @@ Route::resource('categories','CategoryController');
 
 Route::resource('properties','PropertyController');
 Route::resource('ownerwaitings','OwnerWaitingController');
+Route::resource('rentallists','RentalListController');
+
 
 
 Route::resource('rentals','RentalController');

@@ -5,6 +5,7 @@
 @include ('frontend.nav')
 
 @section('content')
+
 <div class="" style="margin-top: 100px">
 
 	<h2 class="d-inline-block badge-dark pl-5 ">Property List</h2>
@@ -73,7 +74,7 @@
 	<!-- Item List Table -->
 	<div class="card shadow mb-4">
 		<div class="card-header py-3">
-			<h6 class="m-0 font-weight-bold text-primary">Owner Post List(Approve)</h6>
+			<h6 class="m-0 font-weight-bold text-primary">Rental List (Request)</h6>
 		</div>
 		<div class="card-body">
 			<div class="table-responsive">
@@ -81,69 +82,78 @@
 					<thead>
 						<tr>
 							<th>#</th>
-							<th>Code No</th>
-							<th>Owner Name</th>
+							{{-- <th>Rental No</th> --}}
+							<th>Property No</th>
+							<th>Customer Name</th>
+							<th>Phone No</th>
+				
+							<th>Plan Date</th>
 							
-						<!-- 	<th>Discount</th> -->
-							<th>Post Name</th>
-							<th>Photo</th>
-							<th>Address</th>
+							
+							<th>Total Price</th>
+							<th>Rental Period</th>
 							<th>Action</th>
 						</tr>
 					</thead>
 					<tfoot>
 						<tr>
 							<th>#</th>
-							<th>Code No</th>
-							<th>Owner Name</th>
+							<th>Customer Name</th>
+							{{-- <th>Rental No</th> --}}
+							<th>Property No</th>
 							<th>Phone No</th>
-						<!-- 	<th>Discount</th> -->
-							<th>Post Name</th>
-							<th>Photo</th>
-							<th>Address</th>
+					
+							<th>Plan Date</th>
+							
+						
+							<th>Total Price</th>
+							<th>Rental Period</th>
 							<th>Action</th>
 						</tr>
 					</tfoot>
 					<tbody id="tbody">
 						@php $i=1; @endphp
-						@foreach($properties as $property)
+						@foreach($rentals as $rental)
 						<tr>
 							<td>{{$i++}}</td>
-							<td>{{$property->codeno}}
+							{{-- <td>{{$rental->rentalno}}
+
+							</td> --}}
+							<td>{{$rental->property->codeno}}</td>
+							<td>{{$rental->customer_name}}
 
 							</td>
-							<td>{{$property->owner_name}}
+							<td>{{$rental->phoneno}}
 
 							</td>
-							
-							<td>{{$property->name}}
+							<td>{{$rental->plandate}}
 
 							</td>
-
-							<td>
-								<img src="{{asset($property->mainphoto)}}" class="h-25 w-50">
-
-							</td>
-
-							<td>{{$property->address}}
-
-							</td>
-
 
 							
+							<td>{{$rental->totalprice}}
+
+							</td>
+							<td>{{$rental->rentalperiod}} Months
+
+							</td>
+
+							
+
+							
 							<td>
 
-								{{-- <a href="" class="btn btn-warning btn-sm">Confirm</a> --}}
-								<form method="POST" action="#" onsubmit="return confirm('Are you sure?')" class="d-inline-block">
-								@csrf
-								@method('PUT')
-								<input type="hidden" name="status" value="approve">
-								<input type="submit" name="btnsubmit" value="Confirm" class="btn btn-outline-success btn-sm">
-							</form>
+								<form method="POST" action="{{route('rentals.update',$rental->id)}}" onsubmit="return confirm('Are you sure?')" class="d-inline-block">
+									@csrf
+									@method('PUT')
+									<input type="hidden" name="status" value="approve">
+									<input type="submit" name="btnsubmit" value="Confirm" class="btn btn-dark">
+								</form>
 
 
 
-								<a href="{{route('properties.edit',$property->id)}}" class="btn btn-outline-info btn-sm">Edit</a>
+
+								{{-- <a href="{{route('ownerwaitings.edit',$property->id)}}" class="btn btn-outline-info">Edit</a> --}}
 
 								{{-- <form method="POST" action="{{route('categories.destroy',$category->id)}}" onsubmit="return confirm('Are you sure delete?')" class="d-inline-block"> --}}
 								{{-- 	@csrf
@@ -168,19 +178,12 @@
 
 </div>
 
+
 @endsection
 
-				{{-- 
-					</div>
 
-				</div>
 
-			</div>
-		</div>
 
-	</div>
-</div>
- --}}
 
 
 

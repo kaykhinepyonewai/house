@@ -8,7 +8,7 @@
 <div class="row">
           @foreach($properties as $property)
           <div class="col-lg-4 col-md-6 mb-4">
-            <div class="card h-100">
+            <div class="card h-100 cardan">
               <img class="card-img-top img-fluid d-block w-100" src="{{asset($property->mainphoto)}}" alt="" {{-- style="width: 300px; height: 300px" --}}>
               <div class="card-body text-center">
                 <h4 class="card-title">
