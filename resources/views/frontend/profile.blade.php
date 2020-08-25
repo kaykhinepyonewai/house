@@ -11,7 +11,7 @@
 				<thead>
 					<tr>
 			<th> Name:</th>
-			<th>{{Auth::user()->email}}</th>
+			<th>{{Auth::user()->name}}</th>
 			</tr>
 			<tr>
 			<th> Email:</th>

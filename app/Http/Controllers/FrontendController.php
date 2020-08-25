@@ -38,6 +38,18 @@ class FrontendController extends Controller
       return view('frontend.profile',compact('rentals'));
       
     }
+    public function about($value='')
+    {
+     
+      return view('frontend.about');
+      
+    }
+    public function contact($value='')
+    {
+     
+      return view('frontend.contact');
+      
+    }
 
    
 

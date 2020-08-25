@@ -48,6 +48,8 @@ Route::resource('categories','CategoryController');
 // 7 (get->4 / post->1 / put->1 / delete->1)
 // Owner Waiting
 Route::get('profile','FrontendController@profile')->name('profile');
+Route::get('about','FrontendController@about')->name('about');
+Route::get('contact','FrontendController@contact')->name('contact');
 
 
 Route::resource('properties','PropertyController');

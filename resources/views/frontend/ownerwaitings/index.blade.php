@@ -87,6 +87,7 @@
 							<th>Post Name</th>
 							<th>Photo</th>
 							<th>Address</th>
+							<th>Phone</th>
 							<th>Action</th>
 						</tr>
 					</thead>
@@ -98,6 +99,7 @@
 							<th>Post Name</th>
 							<th>Photo</th>
 							<th>Address</th>
+							<th>Phone</th>
 							<th>Action</th>
 						</tr>
 					</tfoot>
@@ -123,6 +125,9 @@
 							</td>
 
 							<td>{{$property->address}}
+
+							</td>
+							<td>{{$property->phoneno}}
 
 							</td>
 

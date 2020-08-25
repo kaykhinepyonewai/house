@@ -29,7 +29,10 @@
 					<td>{{$rental->property->phoneno}}</td>
 					<td>
 					<a href="{{route('adminrentals.show',$rental->id)}}">
-						<span class="badge badge-primary badge-pill btn btn-outline-info">Detail</span></a>
+						<span class=" btn btn-outline-info">Detail</span>
+						
+					</a>
+
 					</td>
 				</tr>
 				@endforeach
