@@ -544,6 +544,7 @@ div.order_success
 	width: 200px;
 }*/
 
+<<<<<<< HEAD
 /*About*/
 
 .form1{
@@ -575,3 +576,97 @@ hr.divider1{
     background: rgba(90,92,105,.5);
     line-height: 46px;
     }
+=======
+
+
+
+
+
+/*#cf {
+  position:relative;
+  height:281px;
+  width:450px;
+  margin:0 auto;
+}
+
+
+#cf img {
+  position:absolute;
+  left:0;
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+}
+
+#cf img.top:hover {
+  opacity:0;
+}*/
+
+
+
+.feature_inner_box .circle {
+    width: 212px;
+    height: 208px;
+    display: block;
+    border-radius: 145px;
+    -moz-border-radius: 145px;
+    -webkit-border-radius: 145px;
+    -khtml-border-radius: 145px;
+    text-align: center;
+    background: #fff;
+    display: inline-block;
+    -webkit-transition: all 0.6s ease-in-out;
+    -moz-transition: all 0.6s ease-in-out;
+    -o-transition: all 0.6s ease-in-out;
+    -ms-transition: all 0.6s ease-in-out;
+    transition: all 0.6s ease-in-out;
+    -webkit-box-shadow: 0px 0px 12px rgba(77, 70, 74, 0.69);
+    -moz-box-shadow: 0px 0px 12px rgba(77, 70, 74, 0.69);
+    box-shadow: 0px 0px 12px rgba(77, 70, 74, 0.69);
+    padding: 15px;
+    background: #fff;
+    border: 1px solid #ddd;
+    margin-bottom: 30px;
+}
+
+
+.feature_inner_box {
+    margin-top: 32px;
+    text-align: center;
+    word-wrap: break-word;
+}
+
+.feature_box {
+    width: 100%;
+    border-bottom: 1px dashed #dadada;
+    padding-bottom: 35px;
+    margin-bottom: 35px;
+    overflow: hidden;
+}
+
+
+.feature_inner_box .circle img {
+    width: 170px;
+    height: 166px;
+    border-radius: 140px;
+    -moz-border-radius: 140px;
+    -webkit-border-radius: 140px;
+    -khtml-border-radius: 140px;
+    background: #e1e0e0;
+    margin: 5px;
+    text-align: center;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+
+*:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+>>>>>>> 9ec798868fcc070d1f9a39c98b59ce12e5ec959c

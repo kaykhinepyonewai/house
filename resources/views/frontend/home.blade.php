@@ -8,6 +8,7 @@
 
 
 
+@section('content')
 
 <div class="carousel slide " data-interval="2000" data-ride="carousel">
   <div class="carousel-inner">
@@ -25,7 +26,55 @@
 
 </div>
 <div class="container" style="margin-top: 50px">
-  <h2>တစ္ပါတ္အတြင္း အၾကည့္အမ်ားဆုံး ေရာင္းရန္အိမ္ၿခံေျမမ်ား</h2>
+
+<div class="feature_box">
+<div class="row">
+{{--   ::before --}}
+  <div class="col-md-3 col-sm-6 feature_box_container">
+    <div class="feature_inner_box first">
+      <div class="circle"><a href=""><img src="https://www.inkthemesdemo.com/wptheme/lease-space-wordpress-theme/wp-content/uploads/sites/494/2016/07/feature1.jpg" alt="Feature image" /></a></div>
+      <h6 class="feature_title home1">Studio Apartment</h6>
+      <p class="text-light">The smallest self-contained apartments are referred to as studio, efficiency or bachelor apartments is separate from the rest of the apartment.</p>
+    </div>
+    <div class="clear"></div>
+  </div>
+
+
+  <div class="col-md-3 col-sm-6 feature_box_container">
+    <div class="feature_inner_box second">
+      <div class="circle"><a href=""><img src="https://www.inkthemesdemo.com/wptheme/lease-space-wordpress-theme/wp-content/uploads/sites/494/2016/07/feature2.jpg" alt="Feature image" /></a></div>
+      <h6 class="feature_title home1">Garden apartment</h6>
+      <p class="text-light">In some locales, a garden apartment complex consists of low-rise apartment buildings built with landscaped grounds surrounding them.</p>
+    </div>
+  </div>
+
+
+
+  <div class="col-md-3 col-sm-6 feature_box_container">
+    <div class="feature_inner_box third">
+      <div class="circle"><a href=""><img src="https://www.inkthemesdemo.com/wptheme/lease-space-wordpress-theme/wp-content/uploads/sites/494/2016/07/feature5.jpg" alt="Feature image" /></a></div>
+      <h6 class="feature_title home1">Communal Apartment</h6>
+      <p class="text-light">A typical arrangement is a cluster of five or so room-apartments with separate front doors, occupying a floor in a pre-Revolutionary mansion.</p>
+    </div>
+  </div>
+  <div class="col-md-3 col-sm-6 feature_box_container">
+    <div class="feature_inner_box fourth">
+      <div class="circle"><a href=""><img src="https://www.inkthemesdemo.com/wptheme/lease-space-wordpress-theme/wp-content/uploads/sites/494/2016/07/feature3-1.jpg" alt="Feature image" /></a></div>
+      <h6 class="feature_title home1">Two Storey Flat</h6>
+      <p class="text-light">an existing small house or cottage that has been lifted up to accommodate the creation of a new basement floor housing a separate apartment.</p>
+    </div>
+  </div>
+{{-- ::after --}}
+</div>
+</div>
+
+
+
+
+
+
+
+  <h2 class="home1 text-center">တစ်ပတ်အတွင်း အကြည့်အများဆုံး ငှားရန် အိမ်ခြံမြေများ</h2>
 <div class="row">
          {{--  @foreach($properties as $property)
           <div class="col-lg-4 col-md-6 mb-4">
@@ -55,18 +104,18 @@
           {{--  <div class="col-md-3">
             
           </div> --}}
-          <div class="col-md-6 my-5">
+          <div class="col-md-8 col-sm-8 my-5">
             <div class="card cardan">
               <div class="card-header bg-dark home1">
                 {{$property->name}}
               </div>
               <div class="row no-gutters ">
-                <div class="col-md-6">
+                <div class="col-md-6 col-sm-6">
                   <div class="card-img">
-                    <img src="{{asset($property->mainphoto)}}" class="card-img-top border-bottom img-fluid w-100 h-100">
+                    <img src="{{asset($property->mainphoto)}}" class="card-img-top border-bottom img-fluid" style="width:400px ; height:300px">
                   </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6 col-sm-6">
                   <div class="card-body text-justify">
                     <h5 class="card-title">{{$property->name}}</h5>
                     <p class="card-text">တစ်လချင်း {{$property->pricepermonth}} ကျပ်</p>
@@ -87,6 +136,21 @@
 
 
           </div>
+
+
+           <div class="col-md-4 col-sm-4 my-5">
+           <div class="row">
+           <div class="col-md-12">
+                <h4 class="text-center" style="color:black">အတွင်းခန်း ပုံများ </h4>
+               <img src="{{asset($property->inphoto)}}" class="card-img-top border-bottom img-fluid cardan" style="width:400px ; height:150px">
+            </div>
+              <div class="col-md-12">
+              <h4 class="text-center" style="color:black">အိပ်ခန်း ပုံများ</h4>
+               <img src="{{asset($property->roomphoto)}}" class="card-img-top border-bottom img-fluid cardan" style="width:400px ; height:150px">
+            </div>
+            </div>
+            </div>
+          {{--  </div> --}}
            @endforeach
          
 
@@ -95,7 +159,6 @@
         </div>
 
 
-@section('content')
 
   
 

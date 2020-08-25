@@ -51,12 +51,16 @@ Route::get('profile','FrontendController@profile')->name('profile');
 Route::get('about','FrontendController@about')->name('about');
 Route::get('contact','FrontendController@contact')->name('contact');
 
+Route::get('filterproperty','FrontendController@property')->name('propertypage');
+
 
 Route::resource('properties','PropertyController');
 Route::resource('ownerwaitings','OwnerWaitingController');
 Route::resource('rentallists','RentalListController');
 
+Route::post('/getitems','FrontendController@getItems')->name('getitems');
 
+Route::post('/search','FrontendController@search')->name('search');
 
 Route::resource('rentals','RentalController');
 
