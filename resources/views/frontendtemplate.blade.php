@@ -8,6 +8,8 @@
     <link href="{{asset('backend/vendor/fontawesome-free/css/all.min.css')}}" rel="stylesheet" type="text/css">
     <link rel="stylesheet" type="text/css" href="{{asset('frontend/style1.css')}}">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
 
@@ -77,7 +79,7 @@
   @endrole
 
 
-
+ @yield('sidebar')
 
   @yield('content')
 
@@ -87,23 +89,23 @@
   <div class="container bg-dark text-center pt-5" >
     <div class="row">
       <div class="col-lg-3 col-md-4 ">
-        <img src="images/door.jpg" alt="Avatar" class="avatar ">
+        <img src="frontend/images/fo1.svg" alt="Avatar" class="avatar text-light" style="">
         <h5 class="pp">Door To Door</h5>
         <p class="pp">One time Delivery</p>
       </div>
       
       <div class="col-lg-3 col-md-4 ">
-        <img src="images/satifi.png" alt="Avatar" class="avatar">
+        <img src="frontend/images/fo2.svg" alt="Avatar" class="avatar">
         <h5 class="pp">100% Satification</h5>
         <p class="pp">3 days Return</p>
       </div>
       <div class="col-lg-3 col-md-4 ">
-        <img src="images/customer.jpg" alt="Avatar" class="avatar">
+        <img src="frontend/images/fo3.svg" alt="Avatar" class="avatar">
         <h5 class="pp">Customer Services</h5>
         <p class="pp">Hote Line : 09797363511, 09-3304743</p>
       </div>
       <div class="col-lg-3 col-md-4 ">
-        <img src="images/pay.jpg" alt="Avatar" class="avatar">
+        <img src="frontend/images/f04.svg" alt="Avatar" class="avatar">
         <h5 class="pp">Cash On Delivery</h5>
         <p class="pp">Online Payment</p>
       </div>
@@ -167,14 +169,13 @@
     </footer>
 
 
-
-
-
   <script src="{{asset('frontend/jquery/jquery.min.js')}}"></script>
   <script type="text/javascript" src="{{asset('frontend/bootstrap/js/jquery.min.js')}}"></script>
   <script src="{{asset('frontend/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
 
-   @yield('script')
+
+  @yield('script')
+   
 
 
     <!-- Bootstrap core JavaScript-->
@@ -184,6 +185,8 @@
 
 
   <script src="{{asset('frontend/vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+
+
 
   <!-- Core plugin JavaScript-->
   <script src="{{asset('frontend/vendor/jquery-easing/jquery.easing.min.js')}}"></script>

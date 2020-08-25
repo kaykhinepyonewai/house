@@ -15,6 +15,9 @@
             </a>
           </li>
           <li class="nav-item">
+            <a class="nav-link" href="{{route('propertypage')}}">Rental Property</a>
+          </li>
+          <li class="nav-item">
             <a class="nav-link" href="{{route('properties.index')}}">Property</a>
           </li>
           <li class="nav-item">

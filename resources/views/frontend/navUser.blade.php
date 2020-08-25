@@ -14,9 +14,9 @@
               <span class="sr-only">(current)</span>
             </a>
           </li>
-          {{-- <li class="nav-item">
-            <a class="nav-link" href="{{route('owner.index')}}">Rental</a>
-          </li> --}}
+          <li class="nav-item">
+            <a class="nav-link" href="{{route('propertypage')}}">Rental Property</a>
+          </li>
           <li class="nav-item">
             <a class="nav-link" href="#">About</a>
           </li>

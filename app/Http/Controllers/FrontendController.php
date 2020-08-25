@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Property;
 use App\Rental;
+use App\Township;
 use App\User;
 use Illuminate\Support\Facades\Auth;
 
@@ -13,7 +14,7 @@ class FrontendController extends Controller
 {
    public function home($value='')
    {
-   	$properties = Property::where('status','approve')->get();
+   	$properties = Property::where('status','approve')->take(6)->get();
       // $items = Item::orderBy('id','desc')->take(6)->get();
    	// dd($properties);
    	return view('frontend.home',compact('properties'));
@@ -38,6 +39,46 @@ class FrontendController extends Controller
       return view('frontend.profile',compact('rentals'));
       
     }
+
+
+     public function property($value='')
+   {
+    // $items = Item::orderBy('id','desc')->take(6)->get();
+      $towships =Township::orderBy('id','desc')->take(3)->get();
+    // dd($towships);
+    return view('frontend.filterproperty',compact('towships'));
+   }
+
+
+      // Ajax 
+    public function getItems(Request $request)
+   {
+
+      $sid = $request->sid;      
+      if ($sid == 0) {
+         $properties = Property::all();
+      }
+      else{
+         $properties = Township::find($sid)->properties;
+      } 
+      
+      
+      return $properties;
+   }
+
+
+     public function search(Request $request)
+   {
+
+      $sname = $request->sname;   
+      // dd($name);   
+
+      $properties = Property::where('name','LIKE','%'.$sname.'%')->get();
+       // dd($properties);
+      
+      
+      return $properties;
+   }
 
    
 
