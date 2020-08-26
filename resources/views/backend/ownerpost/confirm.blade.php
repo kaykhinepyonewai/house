@@ -17,7 +17,7 @@
 	<!-- Item List Table -->
 	<div class="card shadow mb-4">
 		<div class="card-header py-3">
-			<h6 class="m-0 font-weight-bold text-primary">Owner Post List(Waiting)</h6>
+			<h6 class="m-0 font-weight-bold text-primary">Owner Post List(Approve)</h6>
 		</div>
 		<div class="card-body">
 			<div class="table-responsive">
@@ -73,17 +73,10 @@
 
 							
 							<td>
-								{{-- <a href="" class="btn btn-warning btn-sm">Confirm</a> --}}
-								<form method="POST" action="{{route('approves.update',$property->id)}}" onsubmit="return confirm('Are you sure?')" class="d-inline-block">
-								@csrf
-								@method('PUT')
-								<input type="hidden" name="status" value="approve">
-								<input type="submit" name="btnsubmit" value="Confirm" class="btn btn-dark">
-							</form>
 
 
 
-								<a href="{{route('waitingdetail',$property->id)}}" class="btn btn-warning btn-sm">Detail</a>
+								<a href="{{route('confirmdetail',$property->id)}}" class="btn btn-warning btn-sm">Detail</a>
 
 								{{-- <form method="POST" action="{{route('categories.destroy',$category->id)}}" onsubmit="return confirm('Are you sure delete?')" class="d-inline-block"> --}}
 								{{-- 	@csrf

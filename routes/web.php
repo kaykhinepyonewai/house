@@ -24,6 +24,7 @@ Route::middleware(['role:admin'])->group(function ()
 Route::get('dashboard','BackendController@dashboard')->name('dashboard');
 
 Route::get('waiting','BackendController@waiting')->name('waiting');
+Route::get('confirm','BackendController@confirm')->name('confirm');
 
 
 // For update stataus->approve
@@ -34,6 +35,8 @@ Route::resource('approves','WaitingController');
 
 // simple controller---- view waiting list in backgroundcontroller 
 Route::get('waitingdetail/{id}','BackendController@waitingdetail')->name('waitingdetail');
+Route::get('confirmdetail/{id}','BackendController@confirmdetail')->name('confirmdetail');
+
 
 
 Route::resource('adminrentals','AdminRentalController');

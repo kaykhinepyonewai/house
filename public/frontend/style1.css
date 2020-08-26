@@ -296,10 +296,10 @@ span.icon
 	color: #e08bdb;
 }*/
 
-.btn
+/*.btn
 {
 	background-color: #c4afc2;
-}
+}*/
 
 .view
 {
@@ -766,3 +766,14 @@ hr.divider1{
 	margin: 50px auto;
 }
 */
+
+.feature_inner_box div:hover {
+  width: 100px;
+  height: 100px;
+  transform: 100px;
+}
+.circle img:hover {
+  width: 100px;
+  height: 100px;
+}
+
