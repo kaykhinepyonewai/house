@@ -9,7 +9,7 @@
 
 @section('content')
 
-<div class="carousel slide " data-interval="2000" data-ride="carousel">
+<div class="carousel slide  " data-interval="2000" data-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active flu flu1">
   
