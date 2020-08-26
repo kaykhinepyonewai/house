@@ -6,7 +6,7 @@
 @include ('frontend.navUser')
 @section('content')
 
-<div class="carousel slide " data-interval="2000" data-ride="carousel">
+{{-- <div class="carousel slide " data-interval="2000" data-ride="carousel">
 		<div class="carousel-inner">
 			<div class="carousel-item active flu">
 
@@ -20,15 +20,17 @@
 			</div>
 		</div>
 
-	</div>
+	</div> --}}
 
 
-	<div class="container-fluid my-5">
+	<div class="container my-5">
 
-	{{-- <div class="d-sm-flex align-items-center justify-content-between mb-4">
+	<{{-- div class="d-sm-flex align-items-center justify-content-between mb-4">
 		<h1 class="h3 mb-0 text-gray-800">Rental List Detail</h1>
 		<a href="{{route('waiting')}}" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-backward fa-sm text-white-50"></i> Go Back</a>
 	</div> --}}
+
+	<h1 class="h3 mb-0 text-gray-800 text-center pt-5">Rental List Detail</h1>
 
 
 	
@@ -37,70 +39,70 @@
 		<div class="row py-5">
 			<div class="col-md-5 row">
 				<div class="col-md-12">
-				<img src="{{asset($property->mainphoto)}}" class="w-100 h-80">
+				<img src="{{asset($property->mainphoto)}}" class="w-100 h-100 img-fluid" >
 				</div>
 				<div class="col-md-6">
-				<img src="{{asset($property->inphoto)}}" class="w-100 h-100">
+				<img src="{{asset($property->inphoto)}}" class=" h-100 img-fluid w-100" style="width: 300px">
 				</div>
 				<div class="col-md-6">
-				<img src="{{asset($property->roomphoto)}}" class="w-100 h-100">
+				<img src="{{asset($property->roomphoto)}}" class=" h-100 img-fluid w-100" style="width: 300px">
 				</div>
 			</div>
 			<div class="col-md-7">
 				<hr class="home1">
 				<div class="row">
-					<div class="col-md-4 home1">Property Title</div>
-					<div class="col-md-4 home1">{{$property->name}}</div>
+					<div class="col-md-4 home2">Property Title</div>
+					<div class="col-md-4 home2">{{$property->name}}</div>
 				</div>
 				<hr>
 				<div class="row">
-					<div class="col-md-4 home1">Owner Name</div>
-					<div class="col-md-4 home1">{{$property->owner_name}}</div>
+					<div class="col-md-4 home2">Owner Name</div>
+					<div class="col-md-4 home2">{{$property->owner_name}}</div>
 				</div>
 				<hr>
 				<div class="row">
-					<div class="col-md-4 home1">Price Pr Month</div>
-					<div class="col-md-4 home1 price">{{$property->pricepermonth}} MMK</div>
+					<div class="col-md-4 home2">Price Pr Month</div>
+					<div class="col-md-4 home2 price">{{$property->pricepermonth}} MMK</div>
 				</div>
 				<hr>
 				<div class="row">
-					<div class="col-md-4 home1">Category Name</div>
-					<div class="col-md-4 home1">{{$property->category->name}}</div>
+					<div class="col-md-4 home2">Category Name</div>
+					<div class="col-md-4 home2">{{$property->category->name}}</div>
 				</div>
 				<hr>
 				<div class="row">
-					<div class="col-md-4 home1">Township</div>
-					<div class="col-md-4 home1">{{$property->township->name}}</div>
-				</div>
-
-				<hr>
-				<div class="row">
-					<div class="col-md-4 home1">Total Number of Bed Room</div>
-					<div class="col-md-4 home1">{{$property->bedroom_qty}} Room</div>
+					<div class="col-md-4 home2">Township</div>
+					<div class="col-md-4 home2">{{$property->township->name}}</div>
 				</div>
 
 				<hr>
 				<div class="row">
-					<div class="col-md-4 home1">Total Number of Bath Room</div>
-					<div class="col-md-4 home1">{{$property->bathroom_qty}} Room</div>
+					<div class="col-md-4 home2">Total Number of Bed Room</div>
+					<div class="col-md-4 home2">{{$property->bedroom_qty}} Room</div>
 				</div>
 
 				<hr>
 				<div class="row">
-					<div class="col-md-4 home1">Volumn</div>
-					<div class="col-md-4 home1">{{$property->volume}} Sqlt</div>
+					<div class="col-md-4 home2">Total Number of Bath Room</div>
+					<div class="col-md-4 home2">{{$property->bathroom_qty}} Room</div>
 				</div>
 
 				<hr>
 				<div class="row">
-					<div class="col-md-4 home1">Contact No</div>
-					<div class="col-md-4 home1">{{$property->phoneno}}</div>
+					<div class="col-md-4 home2">Volumn</div>
+					<div class="col-md-4 home2">{{$property->volume}} Sqlt</div>
 				</div>
 
 				<hr>
 				<div class="row">
-					<div class="col-md-4 home1">Full Address</div>
-					<div class="col-md-4 home1">{{$property->address}}</div>
+					<div class="col-md-4 home2">Contact No</div>
+					<div class="col-md-4 home2">{{$property->phoneno}}</div>
+				</div>
+
+				<hr>
+				<div class="row">
+					<div class="col-md-4 home2">Full Address</div>
+					<div class="col-md-4 home2">{{$property->address}}</div>
 				</div>
 
 				<hr>
@@ -118,7 +120,7 @@
 					<input type="hidden" name="propertyid" value="{{$property->id}}">
 					<input type="hidden" name="ownerid" value="{{$property->user_id}}">
 					<div class="form-group row">
-						<label for="phoneno" class="col-md-4 home1 ">Phone No:</label>
+						<label for="phoneno" class="col-md-4 home2 ">Phone No:</label>
 						<input type="text" id="phoneno"  name="phoneno" class="form-control col-md-8 {{ $errors->first('phoneno') ? 'border-danger' : ''}}">
 						@error('phoneno')
 						<div class="col-md-4"></div>
@@ -131,7 +133,7 @@
 
 					<div class="form-group row">
 
-						<label for="planedate" class="col-md-4 home1 ">Plan Date :</label>
+						<label for="planedate" class="col-md-4 home2 ">Plan Date :</label>
 						<input type="date" id="planedate"  name="planedate" class="form-control col-md-8 {{ $errors->first('name') ? 'border-danger' : '' }}">
 						@error('planedate')
 
@@ -140,7 +142,7 @@
 					</div>
 
 					<div class="form-group row">
-						<label for="bedroom" class="col-md-4 home1 ">Rental Period :</label>
+						<label for="bedroom" class="col-md-4 home2 ">Rental Period :</label>
 						<select name="months" class="click" id="bedroom" class="form-control form-check col-md-8 {{ $errors->first('bedroom') ? ' border-danger' : ''}}">
 							<optgroup label="Choose Rental Month">
 								
@@ -163,7 +165,7 @@
 					</div>
 
 					<div class="form-group row">
-						<label for="total" class="col-md-4 home1 ">Total Price:</label>
+						<label for="total" class="col-md-4 home2 ">Total Price:</label>
 						<input type="text" id="total"  name="total"   class="form-control total  col-md-8 {{ $errors->first('price') ? 'border-danger' : ''}}" readonly="true">
 						@error('total')
 
@@ -184,7 +186,7 @@
 					@else
 					<div class="form-group row">
 						<div class="col-md-4"></div>
-						<a href="{{route('homepage')}}" class="btn btn-dark">Continous To Rental</a>
+						<a href="{{route('homepage')}}" class="btn btn-dark mr-5">Continous To Rental</a>
 						<a href="{{route('login')}}" type="submit" class="btn btn-dark">Rental Now To Login</a>
 					</div>
 					{{-- <a href="{{route('login')}}" class="btn btn-outline-light text-dark home py-5 buy_now">Rental Now To Login</a> --}}

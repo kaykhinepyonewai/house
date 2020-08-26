@@ -98,7 +98,7 @@
 
          <div class="col-md-8 col-sm-8 my-5">
             <div class="card cardan w-100">
-              <div class="card-header bg-dark home1">
+              <div class="card-header home2" style="background-color: #7e8b96;color: white">
                 ${v.name}
               </div>
               <div class="row no-gutters ">
@@ -108,8 +108,8 @@
 
                   </div>
                 </div>
-                <div class="col-md-6">
-                  <div class="card-body text-justify">
+                <div class="col-md-6 " style="background-color: #cbd1d6">
+                  <div class="card-body text-justify" >
                     <h5 class="card-title">${v.name}</h5>
                     <p class="card-text">တစ်လချင်း ${v.pricepermonth} ကျပ်</p>
                      <p class="card-text">ပိုင်ရှင်အမည် :${v.owner_name}</p>
@@ -131,13 +131,13 @@
 
            <div class="col-md-4 col-sm-4 my-5">
            <div class="row">
-           <div class="col-md-12">
+           <div class="col-md-12 cardan">
                 <h4 class="text-center" style="color:black">အတွင်းခန်း ပုံများ </h4>
-               <img src="${v.inphoto}" class="card-img-top border-bottom img-fluid cardan" style="width:400px ; height:150px">
+               <img src="${v.inphoto}" class="card-img-top border-bottom img-fluid " style="width:400px ; height:150px">
             </div>
-              <div class="col-md-12">
+              <div class="col-md-12 cardan">
               <h4 class="text-center" style="color:black">အိပ်ခန်း ပုံများ</h4>
-               <img src="${v.roomphoto}" class="card-img-top border-bottom img-fluid cardan" style="width:400px ; height:150px">
+               <img src="${v.roomphoto}" class="card-img-top border-bottom img-fluid " style="width:400px ; height:150px">
             </div>
             </div>
             </div>

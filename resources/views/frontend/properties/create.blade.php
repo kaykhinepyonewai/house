@@ -12,10 +12,10 @@
 	<div class="container">
 	<div class="" style="margin-top: 100px">
 		<div class="row">
-			<div class="col-md-4" >
+			<div class="col-md-1" >
 				
 			</div>
-			<div class="col-md-8">
+			<div class="col-md-10" style="background-color: #e6e8eb">
 		<form method="POST" action="{{route('properties.store')}}" enctype="multipart/form-data">
 			@csrf
 			{{-- @method('PUT') --}}
