@@ -6,7 +6,7 @@
 @include ('frontend.navUser')
 @section('content')
 
-{{-- <div class="carousel slide " data-interval="2000" data-ride="carousel">
+<div class="carousel slide " data-interval="2000" data-ride="carousel">
 		<div class="carousel-inner">
 			<div class="carousel-item active flu">
 
@@ -20,10 +20,10 @@
 			</div>
 		</div>
 
-	</div> --}}
+	</div>
 
 
-	<div class="container my-5">
+	<div class="container-fluid my-5">
 
 	{{-- <div class="d-sm-flex align-items-center justify-content-between mb-4">
 		<h1 class="h3 mb-0 text-gray-800">Rental List Detail</h1>
@@ -37,7 +37,7 @@
 		<div class="row py-5">
 			<div class="col-md-5 row">
 				<div class="col-md-12">
-				<img src="{{asset($property->mainphoto)}}" class="w-100 h-100">
+				<img src="{{asset($property->mainphoto)}}" class="w-100 h-80">
 				</div>
 				<div class="col-md-6">
 				<img src="{{asset($property->inphoto)}}" class="w-100 h-100">
@@ -108,11 +108,6 @@
 				
 			</div>
 
-
-			{{-- <div class="col-md-6"> --}}
-
-
-		{{-- 	</div> --}}
 		</div>
 
 		<div class="text-center my-5">
@@ -156,9 +151,6 @@
 								<option value="24">24 Months(2 Year)</option>
 								<option value="30">30 Months(2 Years & 6 Months)</option>
 								<option value="36">36 Months(3 Years)</option>
-								{{-- <option value="8">8 Room</option>
-								<option value="9">9 Room</option>
-								<option value="10">10 Room</option> --}}
 								
 							</optgroup>
 
@@ -179,15 +171,20 @@
 						@enderror
 					</div>
 
+				
+
+
 					 @role('customer')
 					<div class="form-group row">
 						<div class="col-md-4"></div>
+						<a href="{{route('homepage')}}" class="btn btn-dark mr-5">Continous To Rental</a>
 						<button type="submit" class="btn btn-dark">Rental Properties</button>
 					</div>
 
 					@else
 					<div class="form-group row">
 						<div class="col-md-4"></div>
+						<a href="{{route('homepage')}}" class="btn btn-dark">Continous To Rental</a>
 						<a href="{{route('login')}}" type="submit" class="btn btn-dark">Rental Now To Login</a>
 					</div>
 					{{-- <a href="{{route('login')}}" class="btn btn-outline-light text-dark home py-5 buy_now">Rental Now To Login</a> --}}

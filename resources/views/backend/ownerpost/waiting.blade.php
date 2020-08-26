@@ -85,11 +85,11 @@
 
 								<a href="{{route('waitingdetail',$property->id)}}" class="btn btn-warning btn-sm">Detail</a>
 
-								{{-- <form method="POST" action="{{route('categories.destroy',$category->id)}}" onsubmit="return confirm('Are you sure delete?')" class="d-inline-block"> --}}
-								{{-- 	@csrf
+								<form method="POST" action="{{route('properties.destroy',$property->id)}}" onsubmit="return confirm('Are you sure delete?')" class="d-inline-block">
+									@csrf
 									@method('DELETE')
 									<input type="submit" name="btnsubmit" value="Delete" class="btn btn-danger">
-								</form> --}}
+								</form>
 
 							</td>
 

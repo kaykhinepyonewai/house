@@ -66,8 +66,9 @@ class RentalController extends Controller
 
 
         $rental->save();
-
-        // return redirect()->route('frontend/home');
+        // alert("Successful");
+        return redirect()->route('successfulpage');
+        // return 'Successful';
 
 
     }

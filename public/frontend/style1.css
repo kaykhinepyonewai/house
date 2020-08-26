@@ -13,7 +13,8 @@ nav.navbar
 nav.shop .navbar-nav .nav-item .nav-link 
 {
 	
-	color: #e08bdb;
+	/*color: #e08bdb;*/
+	color: #f2f7f7;
 	font-family: 'Lobster', cursive;
 	font-size: 1.5rem !important;
 	
@@ -22,7 +23,7 @@ nav.shop .navbar-nav .nav-item .nav-link
 
 a.navbar-brand
 {
-	color: #e08bdb;
+	/*color: #e08bdb;*/
 	font-family: 'Lobster', cursive;
 	font-size: 1.5rem !important;
 }
@@ -40,7 +41,7 @@ nav.shop
 nav.navbar-toggler
 {
 	border-color: #e08bdb;
-	color: #e08bdb; 
+	/*color: #e08bdb; */
 }
 #scroll{
 	/*position: fixed;*/

@@ -286,6 +286,14 @@ class PropertyController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $property = Property::find($id);
+        // dd($property);
+        $property->delete();
+        unlink($property->mainphoto);
+        unlink($property->inphoto);
+        unlink($property->roomphoto);
+
+        //redirect
+        return redirect()->route('waiting');
     }
 }
