@@ -6,12 +6,33 @@
 @include ('frontend.navUser')
 @section('content')
 
+{{-- <div class="carousel slide " data-interval="2000" data-ride="carousel">
+		<div class="carousel-inner">
+			<div class="carousel-item active flu">
+
+				<img src="{{asset('frontend/images/bg.jpg')}}" class="img-fluid w-100 " style="height: 500px">
+			</div>
+			<div class="carousel-item">
+				<img src="{{asset('frontend/images/main.jpg')}}" class="d-block w-100 " style="height: 500px">
+			</div>
+			<div class="carousel-item">
+				<img src="{{asset('frontend/images/main.jpg')}}" class="d-block w-100 " style="height: 500px">
+			</div>
+		</div>
+
+	</div> --}}
+
+
 	<div class="container my-5">
 
 	{{-- <div class="d-sm-flex align-items-center justify-content-between mb-4">
 		<h1 class="h3 mb-0 text-gray-800">Rental List Detail</h1>
 		<a href="{{route('waiting')}}" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-backward fa-sm text-white-50"></i> Go Back</a>
 	</div> --}}
+
+
+	
+
 		
 		<div class="row py-5">
 			<div class="col-md-5 row">

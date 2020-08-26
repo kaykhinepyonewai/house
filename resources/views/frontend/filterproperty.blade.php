@@ -33,7 +33,7 @@
    @include ('frontend.sidebar')
 
 
-<div class="container img-fluid" style="background-image: url(frontend/images/bg3.jpg); background-repeat: no-repeat; background-attachment: fixed; opacity: 1">
+<div class="container img-fluid" {{-- style="background-image: url(frontend/images/bg3.jpg); background-repeat: no-repeat; background-attachment: fixed; opacity: 1" --}}>
 <div class="row">
 {{--  <div class="col-md-3"> --}}
    

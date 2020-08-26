@@ -12,8 +12,8 @@
 
 <div class="carousel slide " data-interval="2000" data-ride="carousel">
   <div class="carousel-inner">
-    <div class="carousel-item active flu">
-     <!--    <h1 class="text-center">Shopping With me</h1> -->
+    <div class="carousel-item active flu flu1">
+  
      <img src="frontend/images/main.jpg" class="img-fluid w-100 ">
    </div>
    <div class="carousel-item">
@@ -25,6 +25,28 @@
 </div>
 
 </div>
+
+{{-- <div class="container-fluid">
+  <div class="img-area">
+    <div class="img-slide">
+      <div class="single-img">
+         <img src="frontend/images/main.jpg" class="img-fluid w-100 ">
+         <h2>Yummy</h2>
+      </div>
+      <div class="single-img">
+         <img src="frontend/images/bg3.jpg" class="img-fluid w-100 ">
+         <h2>Yummy</h2>
+      </div>
+      <div class="single-img">
+         <img src="frontend/images/bg2.jpg" class="img-fluid w-100 ">
+         <h2>Yummy</h2>
+      </div>
+    </div>
+  </div>
+</div> --}}
+
+
+
 <div class="container" style="margin-top: 50px">
 
 <div class="feature_box">
@@ -33,8 +55,8 @@
   <div class="col-md-3 col-sm-6 feature_box_container">
     <div class="feature_inner_box first">
       <div class="circle"><a href=""><img src="https://www.inkthemesdemo.com/wptheme/lease-space-wordpress-theme/wp-content/uploads/sites/494/2016/07/feature1.jpg" alt="Feature image" /></a></div>
-      <h6 class="feature_title home1">Studio Apartment</h6>
-      <p class="text-light">The smallest self-contained apartments are referred to as studio, efficiency or bachelor apartments is separate from the rest of the apartment.</p>
+      <h6 class="feature_title text-dark">Studio Apartment</h6>
+      <p class="text-dark">The smallest self-contained apartments are referred to as studio, efficiency or bachelor apartments is separate from the rest of the apartment.</p>
     </div>
     <div class="clear"></div>
   </div>
@@ -43,8 +65,8 @@
   <div class="col-md-3 col-sm-6 feature_box_container">
     <div class="feature_inner_box second">
       <div class="circle"><a href=""><img src="https://www.inkthemesdemo.com/wptheme/lease-space-wordpress-theme/wp-content/uploads/sites/494/2016/07/feature2.jpg" alt="Feature image" /></a></div>
-      <h6 class="feature_title home1">Garden apartment</h6>
-      <p class="text-light">In some locales, a garden apartment complex consists of low-rise apartment buildings built with landscaped grounds surrounding them.</p>
+      <h6 class="feature_title text-dark">Garden apartment</h6>
+      <p class="text-dark">In some locales, a garden apartment complex consists of low-rise apartment buildings built with landscaped grounds surrounding them.</p>
     </div>
   </div>
 
@@ -53,15 +75,15 @@
   <div class="col-md-3 col-sm-6 feature_box_container">
     <div class="feature_inner_box third">
       <div class="circle"><a href=""><img src="https://www.inkthemesdemo.com/wptheme/lease-space-wordpress-theme/wp-content/uploads/sites/494/2016/07/feature5.jpg" alt="Feature image" /></a></div>
-      <h6 class="feature_title home1">Communal Apartment</h6>
-      <p class="text-light">A typical arrangement is a cluster of five or so room-apartments with separate front doors, occupying a floor in a pre-Revolutionary mansion.</p>
+      <h6 class="feature_title text-dark">Communal Apartment</h6>
+      <p class="text-dark">A typical arrangement is a cluster of five or so room-apartments with separate front doors, occupying a floor in a pre-Revolutionary mansion.</p>
     </div>
   </div>
   <div class="col-md-3 col-sm-6 feature_box_container">
     <div class="feature_inner_box fourth">
       <div class="circle"><a href=""><img src="https://www.inkthemesdemo.com/wptheme/lease-space-wordpress-theme/wp-content/uploads/sites/494/2016/07/feature3-1.jpg" alt="Feature image" /></a></div>
-      <h6 class="feature_title home1">Two Storey Flat</h6>
-      <p class="text-light">an existing small house or cottage that has been lifted up to accommodate the creation of a new basement floor housing a separate apartment.</p>
+      <h6 class="feature_title">Two Storey Flat</h6>
+      <p class="text-dark">an existing small house or cottage that has been lifted up to accommodate the creation of a new basement floor housing a separate apartment.</p>
     </div>
   </div>
 {{-- ::after --}}
@@ -166,3 +188,29 @@
 
 
 @endsection
+
+
+
+
+{{-- @section('script')
+ <script type="text/javascript">
+    $(document).ready(function()
+    {
+      $('.img-slide').slick({
+        autoplay: true,
+        autoplaySpeed: 7000,
+        arrows: false,
+        dots: true,
+        fade: true,
+        speed: 2000,
+        infinite: true,
+        cssEase: 'ease-in-out',
+        loop: true
+      });
+
+    })
+  </script>
+
+
+  @endsection
+ --}}

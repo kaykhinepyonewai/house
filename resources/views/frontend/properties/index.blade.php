@@ -5,7 +5,28 @@
 @include ('frontend.nav')
 
 @section('content')
-<div class="" style="margin-top: 100px">
+
+
+
+{{-- <div class="carousel slide " data-interval="2000" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active flu">
+  
+     <img src="frontend/images/bg.jpg" class="img-fluid w-100 " style="height: 500px">
+   </div>
+   <div class="carousel-item">
+    <img src="frontend/images/main.jpg" class="d-block w-100 " style="height: 500px">
+  </div>
+  <div class="carousel-item">
+    <img src="frontend/images/main.jpg" class="d-block w-100 " style="height: 500px">
+  </div>
+</div>
+
+</div>
+ --}}
+
+
+<div class="my-5" {{-- style="margin-top: 20px" --}}>
 
 	<h2 class="d-inline-block badge-dark pl-5 ">Property List</h2>
 	<a href="{{route('properties.create')}}" class="btn btn-dark float-right mr-4 ">
@@ -175,17 +196,7 @@
 
 @endsection
 
-				{{-- 
-					</div>
-
-				</div>
-
-			</div>
-		</div>
-
-	</div>
-</div>
- --}}
+				
 
 
 

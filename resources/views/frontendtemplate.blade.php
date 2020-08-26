@@ -9,6 +9,10 @@
     <link rel="stylesheet" type="text/css" href="{{asset('frontend/style1.css')}}">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+    {{-- <link rel="stylesheet" type="text/css" href="{{asset('frontend/slick.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{asset('frontend/slick-theme.css')}}"> --}}
+
+
 
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
@@ -29,7 +33,7 @@
 
    <link href="{{asset('frontend/vendor/datatables/dataTables.bootstrap4.min.css')}}" rel="stylesheet">
 </head>
-<body class="bg-dark">
+<body {{-- class="bg-dark" --}}>
 
 
   {{-- <nav class="navbar navbar-expand-lg shop  bg-dark navbar-dark" id="scroll">
@@ -89,23 +93,23 @@
   <div class="container bg-dark text-center pt-5" >
     <div class="row">
       <div class="col-lg-3 col-md-4 ">
-        <img src="frontend/images/fo1.svg" alt="Avatar" class="avatar text-light" style="">
+        <img src="{{asset('frontend/images/fo1.svg')}}" alt="Avatar" class="avatar text-light" style="">
         <h5 class="pp">Door To Door</h5>
         <p class="pp">One time Delivery</p>
       </div>
       
       <div class="col-lg-3 col-md-4 ">
-        <img src="frontend/images/fo2.svg" alt="Avatar" class="avatar">
+        <img src="{{asset('frontend/images/fo2.svg')}}" alt="Avatar" class="avatar">
         <h5 class="pp">100% Satification</h5>
         <p class="pp">3 days Return</p>
       </div>
       <div class="col-lg-3 col-md-4 ">
-        <img src="frontend/images/fo3.svg" alt="Avatar" class="avatar">
+        <img src="{{asset('frontend/images/fo3.svg')}}" alt="Avatar" class="avatar">
         <h5 class="pp">Customer Services</h5>
         <p class="pp">Hote Line : 09797363511, 09-3304743</p>
       </div>
       <div class="col-lg-3 col-md-4 ">
-        <img src="frontend/images/f04.svg" alt="Avatar" class="avatar">
+        <img src="{{asset('frontend/images/f04.svg')}}" alt="Avatar" class="avatar">
         <h5 class="pp">Cash On Delivery</h5>
         <p class="pp">Online Payment</p>
       </div>
@@ -172,6 +176,14 @@
   <script src="{{asset('frontend/jquery/jquery.min.js')}}"></script>
   <script type="text/javascript" src="{{asset('frontend/bootstrap/js/jquery.min.js')}}"></script>
   <script src="{{asset('frontend/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+
+
+
+  {{-- <script type="text/javascript" src="{{asset('frontend/slick.min.js')}}"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> --}}
+
+
+
 
 
   @yield('script')
