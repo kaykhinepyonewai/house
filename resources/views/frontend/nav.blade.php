@@ -49,6 +49,12 @@
             ><i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
               {{ __('Profile') }}
             </a>
+
+             <a class="dropdown-item" href="{{ route('rentallists.index') }}"
+            ><i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
+              {{ __('Rental List') }}
+            </a>
+
              <a class="dropdown-item" href="{{ route('logout') }}"
               onclick="event.preventDefault();
               document.getElementById('logout-form').submit();"><i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>

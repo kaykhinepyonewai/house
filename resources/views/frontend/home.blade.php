@@ -7,7 +7,6 @@
 @include ('frontend.navUser')
 
 
-
 @section('content')
 
 <div class="carousel slide " data-interval="2000" data-ride="carousel">

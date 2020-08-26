@@ -49,6 +49,23 @@ class BackendController extends Controller
    //  }
 
 
+    public function confirm($value='')
+   {
+
+     $properties=Property::where('status','approve')->get();
+    return view('backend.ownerpost.confirm',compact('properties'));
+   }
+
+
+    public function confirmdetail($id)
+   {
+
+     $propertry= Property::find($id);
+     // dd($propertry);
+    return view('backend.ownerpost.confirmdetail',compact('propertry'));
+   }
+
+
 
 
 

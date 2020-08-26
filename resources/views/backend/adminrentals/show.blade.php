@@ -15,6 +15,7 @@
 <a href="{{route('adminrentals.index')}}}" class=" btn btn-sm btn-info  float-right "><i class="fas fa-backward fa-sm text-white-50"></i> Go Back</a>
 
 
+
 <div class="container-fluid">
     <div class="table-responsive">
 
@@ -32,13 +33,13 @@
                                 Rental No
                             </div>
                             <div class="col-md-3">
-                                :{{$rental->property->codeno}}
+                                {{$rental->property->codeno}}
                             </div>
                             <div class="col-md-3">
                                 Rental Period
                             </div>
                             <div class="col-md-3">
-                                :{{$rental->rentalperiod}}
+                                {{$rental->rentalperiod}}
                             </div>
                             
 
@@ -52,14 +53,14 @@
                                     House Name
                                 </div>
                                 <div class="col-md-3">
-                                    :{{$rental->property->name}}
+                                    {{$rental->property->name}}
                                 </div>
                                 
                                 <div class="col-md-3">
                                     Rental Date
                                 </div>
                                 <div class="col-md-3">
-                                    :{{$rental->plandate}}
+                                    {{$rental->plandate}}
                                 </div>
 
                             </div> 
@@ -72,14 +73,14 @@
                                 House Address
                             </div>
                             <div class="col-md-3">
-                                :{{$rental->property->address}}
+                                {{$rental->property->address}}
                             </div>
 
                             <div class="col-md-3">
-                                Rental Time
+                                Desciption
                             </div>
                             <div class="col-md-3">
-                                :{{$rental->created_at}}
+                                {{$rental->property->description}}
                             </div>
 
                         </div> 
@@ -93,13 +94,13 @@
                             Owner Name
                         </div>
                         <div class="col-md-3">
-                            :{{$rental->property->owner_name}}
+                            {{$rental->property->owner_name}}
                         </div>
                         <div class="col-md-3">
                             Customer
                         </div>
                         <div class="col-md-3">
-                            :{{$rental->customer_name}}
+                            {{$rental->customer_name}}
                         </div>
 
                     </div> 
@@ -113,13 +114,13 @@
                         Owner Ph
                     </div>
                     <div class="col-md-3">
-                        :{{$rental->property->phoneno}}
+                     {{$rental->property->phoneno}}
                     </div>
                     <div class="col-md-3">
                         Customer Ph
                     </div>
                     <div class="col-md-3">
-                        :{{$rental->phoneno}}
+                        {{$rental->phoneno}}
                     </div>
 
 
@@ -153,13 +154,13 @@
                     PricePerMonth
                 </div>
                 <div class="col-md-3">
-                    :{{$rental->property->pricepermonth}}
+                    {{$rental->property->pricepermonth}}
                 </div>
                 <div class="col-md-3">
                     House BedRoom
                 </div>
                 <div class="col-md-3">
-                    :{{$rental->property->bedroom_qty}}
+                    {{$rental->property->bedroom_qty}}
                 </div>
 
             </div> 
@@ -173,13 +174,13 @@
                 House Volume
             </div>
             <div class="col-md-3">
-                :{{$rental->property->volume}}
+                {{$rental->property->volume}}
             </div>
             <div class="col-md-3">
                 House BathRoom
             </div>
             <div class="col-md-3">
-                :{{$rental->property->bathroom_qty}}
+                {{$rental->property->bathroom_qty}}
             </div>
 
         </div> 

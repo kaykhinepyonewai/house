@@ -7,8 +7,8 @@
 <div class="container-fluid">
 
 	<div class="d-sm-flex align-items-center justify-content-between mb-4">
-		<h1 class="h3 mb-0 text-gray-800">Waiting List Detail</h1>
-		<a href="{{route('waiting')}}" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-backward fa-sm text-white-50"></i> Go Back</a>
+		<h1 class="h3 mb-0 text-gray-800">Approve List Detail</h1>
+		<a href="{{route('confirm')}}" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-backward fa-sm text-white-50"></i> Go Back</a>
 	</div>
 		
 		<div class="row">
@@ -81,17 +81,7 @@
 				</div>
 
 				<hr>
-				<div class="row">
-					<div class="col-md-4"></div>
-					<div class="col-md-4">
-						<form method="POST" action="{{route('approves.update',$propertry->id)}}" onsubmit="return confirm('Are you sure?')" class="d-inline-block">
-								@csrf
-								@method('PUT')
-								<input type="hidden" name="status" value="approve">
-								<input type="submit" name="btnsubmit" value="Confirm" class="btn btn-dark">
-							</form>
-				</div>
-			
+				
 			</div>
 		</div>
 	</div>

@@ -1,10 +1,16 @@
 @extends('backendtemplate')
 @section('content')
 
-	<div class="container-fluid">
-		<h2 class="d-inline-block">Rental List</h2>
-		
-		<table class="table table-bordered">
+	
+
+		<div class="card shadow mb-4">
+		<div class="card-header py-3">
+			<h3 class="m-0 font-weight-bold text-primary">Rental List</h3>
+		</div>
+
+<div class="card-body">
+			<div class="table-responsive">
+		<table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
 			<thead>
 				<tr>
 					<th>No</th>
@@ -38,6 +44,8 @@
 				@endforeach
 			</tbody>
 		</table>
+	</div>
+</div>
 	</div>
 
 @endsection
