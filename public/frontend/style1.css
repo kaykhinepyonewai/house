@@ -670,3 +670,13 @@ hr.divider1{
     box-sizing: border-box;
 }
 
+
+.feature_inner_box div:hover {
+  width: 100px;
+  height: 100px;
+  transform: 100px;
+}
+.circle img:hover {
+  width: 100px;
+  height: 100px;
+}

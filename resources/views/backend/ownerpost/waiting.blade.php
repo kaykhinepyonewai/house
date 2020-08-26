@@ -73,7 +73,6 @@
 
 							
 							<td>
-
 								{{-- <a href="" class="btn btn-warning btn-sm">Confirm</a> --}}
 								<form method="POST" action="{{route('approves.update',$property->id)}}" onsubmit="return confirm('Are you sure?')" class="d-inline-block">
 								@csrf
