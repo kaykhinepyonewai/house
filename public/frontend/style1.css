@@ -14,7 +14,8 @@ nav.shop .navbar-nav .nav-item .nav-link
 {
 	
 	/*color: #e08bdb;*/
-	color: #f2f7f7;
+	color: #fafafa;
+
 	font-family: 'Lobster', cursive;
 	font-size: 1.5rem !important;
 	
@@ -51,14 +52,14 @@ nav.navbar-toggler
 
 .animate:hover
 {
-	transform: translate(0,-8px);                 /*horizontal(normal) and vertical(uper(take -) , lower (take +))*/
+	transform: translate(0,-8px);                /* horizontal(normal) and vertical(uper(take -) , lower (take +))*/
 	transform: translate(0,8px);   
 	transition-duration: .3s;
 }
 
 .animate1:hover
 {
-	/*transform: translate(0,-8px);      */           /*horizontal(normal) and vertical(uper(take -) , lower (take +))*/
+	transform: translate(0,-8px);                 horizontal(normal) and vertical(uper(take -) , lower (take +))
 	transform: translate(35px,0);    
 	transition-duration: .3s;
 }
@@ -66,7 +67,7 @@ nav.navbar-toggler
 
 .animate1:mouseout
 {
-	/*transform: translate(0,-8px);      */           /*horizontal(normal) and vertical(uper(take -) , lower (take +))*/
+	transform: translate(0,-8px);                 horizontal(normal) and vertical(uper(take -) , lower (take +))
 	transform: translate(-35px,0);    
 	transition-duration: .3s;
 }
@@ -155,9 +156,18 @@ div.dropdown-menu a:hover
 
 .home1
 {
-	color: #e08bdb;
+	/*color: #e08bdb;*/
+	color: #111716;
 	font-family: 'Lobster', cursive;
 	font-size: 25px;
+}
+
+.home2
+{
+	/*color: #e08bdb;*/
+	color: #111716;
+	font-family: 'Lobster', cursive;
+	font-size: 20px;
 }
 
 /*.hm

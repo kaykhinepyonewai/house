@@ -127,7 +127,7 @@
           </div> --}}
           <div class="col-md-8 col-sm-8 my-5">
             <div class="card cardan">
-              <div class="card-header bg-dark home1">
+              <div class="card-header  home2" style="background-color: #7e8b96;color: white">
                 {{$property->name}}
               </div>
               <div class="row no-gutters ">
@@ -136,7 +136,7 @@
                     <img src="{{asset($property->mainphoto)}}" class="card-img-top border-bottom img-fluid" style="width:400px ; height:300px">
                   </div>
                 </div>
-                <div class="col-md-6 col-sm-6">
+                <div class="col-md-6 col-sm-6" style="background-color: #cbd1d6">
                   <div class="card-body text-justify">
                     <h5 class="card-title">{{$property->name}}</h5>
                     <p class="card-text">တစ်လချင်း {{$property->pricepermonth}} ကျပ်</p>

@@ -32,12 +32,6 @@
 	<a href="{{route('properties.create')}}" class="btn  float-right mr-4 btn-info">
 	<i class="fas fa-plus fa-sm text-white-50"></i>Add Properties</a>
 
-	
-
-
-
-	
-
 
 	<div class="container-fluid my-3">
 
