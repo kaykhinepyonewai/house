@@ -62,6 +62,15 @@ class FrontendController extends Controller
    }
 
 
+     public function sucessful($value='')
+   {
+      // $items = Item::all();
+      // $items = Item::orderBy('id','desc')->take(6)->get();
+      // dd($items);
+      return view('frontend.successful');
+   }
+
+
       // Ajax 
     public function getItems(Request $request)
    {

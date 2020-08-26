@@ -67,6 +67,8 @@ Route::post('/search','FrontendController@search')->name('search');
 
 Route::resource('rentals','RentalController');
 
+Route::get('sucessful','FrontendController@sucessful')->name('successfulpage');
+
 Route::get('/','FrontendController@home')->name('homepage');
 
 Auth::routes();

@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Auth;
 use App\Http\Controllers\Controller;
 use App\Providers\RouteServiceProvider;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
+use Illuminate\Http\Request;
 
 class LoginController extends Controller
 {
@@ -39,28 +40,28 @@ class LoginController extends Controller
     }
 
 
-    // protected function authenticated(Request $request, $user)
-    // {
-    //     $roles = $user->getRoleNames();
+    protected function authenticated(Request $request, $user)
+    {
+        $roles = $user->getRoleNames();
 
-    //     // Check user role
-    //     switch($roles[0])
-    //     {
-    //         case 'admin':
-    //                 return redirect('/dashboard');
-    //             break;
+        // Check user role
+        switch($roles[0])
+        {
+            case 'admin':
+                    return redirect('/dashboard');
+                break;
 
-    //         case 'customer':
-    //                 return redirect('/');
-    //             break;
+            case 'customer':
+                    return redirect('/');
+                break;
 
-    //          case 'owner':
-    //                 return redirect('/');
-    //             break;
-    //         default:
-    //                 return redirect('/');
-    //             break;
+             case 'owner':
+                    return redirect('/');
+                break;
+            default:
+                    return redirect('/');
+                break;
 
-    //     }
-    // }
+        }
+    }
 }
