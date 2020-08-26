@@ -7,96 +7,33 @@
 @section('content')
 
 
-
-<div class="carousel slide " data-interval="2000" data-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active flu">
-  
-     <img src="frontend/images/bg.jpg" class="img-fluid w-100 " style="height: 500px">
-   </div>
-   <div class="carousel-item">
-    <img src="frontend/images/main.jpg" class="d-block w-100 " style="height: 500px">
-  </div>
-  <div class="carousel-item">
-    <img src="frontend/images/main.jpg" class="d-block w-100 " style="height: 500px">
-  </div>
-</div>
-
-</div>
-
+					
+					
+					
 <div class="" style="margin-top: 100px">
 
-	<h2 class="d-inline-block badge-dark pl-5 ">Property List</h2>
-	<a href="{{route('properties.create')}}" class="btn btn-dark float-right mr-4 ">
-	<i class="fas fa-plus fa-sm text-white-50"></i>Add Properties</a>
-
+	<h2 class="d-inline-block  pl-5 text-info">Property List</h2>
+	{{-- <a href="{{route('properties.create')}}" class="btn  float-right mr-4 btn-info">
+	<i class="fas fa-plus fa-sm text-white-50"></i>Add Properties</a> --}}
+				
 	
+<div class="container-fluid my-3">
 
-<!-- Begin Page Content -->
-<div class="container-fluid">
+		<div class="row">
 
-	
+			<div class="col-lg-3">
 
- <!-- Page Wrapper -->
-  <div id="wrapper">
+		
+				<div class="list-group">
+					<a href="{{route('ownerwaitings.index')}}" class="list-group-item btn text-info">Waiting List</a>
+					<a href="{{route('properties.index')}}" class="list-group-item btn text-info">Approve List</a>
+					<a href="{{route('rentallists.index')}}" class="list-group-item btn text-info">Rental list</a>
+				</div>
 
-    <!-- Sidebar -->
-    <ul class="navbar-nav sidebar sidebar-dark accordion" >
-
-      <!-- Sidebar - Brand -->
-      <a class="sidebar-brand d-flex align-items-center justify-content-center" href="#">
-        <div class="sidebar-brand-icon rotate-n-15">
-          <i class="fas fa-laugh-wink"></i>
-        </div>
-        <div class="sidebar-brand-text mx-1">K <sup>2</sup>&nbsp;Rental House</div>
-      </a>
-
-      <!-- Divider -->
-      <hr class="sidebar-divider my-0">
-
-      <!-- Nav Item - Dashboard -->
-      <li class="nav-item active">
-        <a class="nav-link" href="{{route('ownerwaitings.index')}}">
-          <i class="fas fa-fw fa-tachometer-alt"></i>
-          <span>Waiting List</span></a>
-      </li>
-      <hr class="sidebar-divider my-0">
-      <li class="nav-item active">
-        <a class="nav-link" href="{{route('properties.index')}}">
-          <i class="fas fa-fw fa-tachometer-alt"></i>
-          <span>Approve List</span></a>
-      </li>
-       <hr class="sidebar-divider my-0">
-      <li class="nav-item active">
-        <a class="nav-link" href="{{route('rentallists.index')}}">
-          <i class="fas fa-fw fa-tachometer-alt"></i>
-          <span>Rental List</span></a>
-      </li>
-
-   
-
-      
-      
-      <!-- Divider -->
-      <hr class="sidebar-divider d-none d-md-block">
-
-      <!-- Sidebar Toggler (Sidebar) -->
-      <div class="text-center d-none d-md-inline">
-        <button class="rounded-circle border-0" id="sidebarToggle"></button>
-      </div>
-
-    </ul>
-    <!-- End of Sidebar -->
-
-
-	<!-- Item List Table -->
-	<div class="card shadow mb-4">
-		<div class="card-header py-3">
-			<h6 class="m-0 font-weight-bold ">Rental List (Request)</h6>
-		</div>
-		<div class="card-body">
-			<div class="table-responsive">
-				<table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+			</div>
+			<div class="col-md-9">
+				<div class="table-responsive">
+					<table class="table table-bordered  text-info">
 					<thead>
 						<tr>
 							<th>#</th>
@@ -109,11 +46,13 @@
 							<th>Action</th>
 						</tr>
 					</thead>
+
 					<tfoot>
 						<tr>
 							<th>#</th>
-							<th>Customer Name</th>
 							<th>Property No</th>
+							<th>Customer Name</th>
+							
 							<th>Phone No</th>
 					
 							<th>Plan Date</th>
@@ -124,14 +63,13 @@
 							<th>Action</th>
 						</tr>
 					</tfoot>
-					<tbody id="tbody">
+						
+						<tbody >
 						@php $i=1; @endphp
 						@foreach($rentals as $rental)
 						<tr>
 							<td>{{$i++}}</td>
-							{{-- <td>{{$rental->rentalno}}
-
-							</td> --}}
+							
 							<td>{{$rental->property->codeno}}</td>
 							<td>{{$rental->customer_name}}
 
@@ -164,16 +102,6 @@
 								</form>
 
 
-
-
-								{{-- <a href="{{route('ownerwaitings.edit',$property->id)}}" class="btn btn-outline-info">Edit</a> --}}
-
-								{{-- <form method="POST" action="{{route('categories.destroy',$category->id)}}" onsubmit="return confirm('Are you sure delete?')" class="d-inline-block"> --}}
-								{{-- 	@csrf
-									@method('DELETE')
-									<input type="submit" name="btnsubmit" value="Delete" class="btn btn-danger">
-								</form> --}}
-
 							</td>
 
 						</tr>
@@ -184,14 +112,13 @@
 								
 
 					</tbody>
-				</table>
+					</table>
+				</div>
 			</div>
 		</div>
+
 	</div>
-
-</div>
-
-
+</div>	
 @endsection
 
 

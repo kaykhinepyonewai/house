@@ -135,7 +135,7 @@ class PropertyController extends Controller
 
 
         // Redirect
-        return redirect()->route('properties.create');
+        return redirect()->route('properties.index');
 
 
         

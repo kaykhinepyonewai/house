@@ -12,7 +12,7 @@
 
     <p class="text-center text-info">Mandalay Region,Sintgaing Township,Paleik.<br>Tel:09770106551</p>
 </tr>
-<a href="{{route('adminrentals.index')}}}" class=" btn btn-sm btn-info  float-right "><i class="fas fa-backward fa-sm text-white-50"></i> Go Back</a>
+<a href="{{route('adminrentals.index')}}" class=" btn btn-sm btn-info  float-right "><i class="fas fa-backward fa-sm text-white-50"></i> Go Back</a>
 
 
 
@@ -67,7 +67,7 @@
                         </th>
                     </tr>
                     <tr>
-                     <th colspan="4">
+                       <th colspan="4">
                         <div class="row">
                             <div class="col-md-3">
                                 House Address
@@ -77,10 +77,10 @@
                             </div>
 
                             <div class="col-md-3">
-                                Desciption
+                                PricePerMonth
                             </div>
                             <div class="col-md-3">
-                                {{$rental->property->description}}
+                                {{$rental->property->pricepermonth}}
                             </div>
 
                         </div> 
@@ -88,7 +88,7 @@
 
                 </tr>
                 <tr>
-                 <th colspan="4">
+                   <th colspan="4">
                     <div class="row">
                         <div class="col-md-3">
                             Owner Name
@@ -108,83 +108,84 @@
 
             </tr>
             <tr>
-             <th colspan="4">
+               <th colspan="4">
                 <div class="row">
                     <div class="col-md-3">
                         Owner Ph
                     </div>
                     <div class="col-md-3">
-                     {{$rental->property->phoneno}}
-                    </div>
-                    <div class="col-md-3">
-                        Customer Ph
-                    </div>
-                    <div class="col-md-3">
-                        {{$rental->phoneno}}
-                    </div>
-
-
-                </div> 
-            </th>
-
-        </tr>
-        <tr>
-         <th colspan="4">
-            <div class="row">
-                <div class="col-md-3">
-                    Rental House Photo
+                       {{$rental->property->phoneno}}
+                   </div>
+                   <div class="col-md-3">
+                    Customer Ph
                 </div>
                 <div class="col-md-3">
-                    <img src="{{asset($rental->property->mainphoto)}}" class="img-fluid" style="width: 100px ; height: 100px">
-                </div>
-                <div class="col-md-3">
-                    <img src="{{asset($rental->property->inphoto)}}" class="img-fluid" style="width: 100px ; height: 100px">
-                </div>
-                <div class="col-md-3">
-                    <img src="{{asset($rental->property->roomphoto)}}" class=" img-fluid" style="width: 100px ; height: 100px">
+                    {{$rental->phoneno}}
                 </div>
 
-            </th>
-
-        </tr>
-        <tr>
-         <th colspan="4">
-            <div class="row">
-                <div class="col-md-3">
-                    PricePerMonth
-                </div>
-                <div class="col-md-3">
-                    {{$rental->property->pricepermonth}}
-                </div>
-                <div class="col-md-3">
-                    House BedRoom
-                </div>
-                <div class="col-md-3">
-                    {{$rental->property->bedroom_qty}}
-                </div>
 
             </div> 
         </th>
 
     </tr>
     <tr>
-     <th colspan="4">
+       <th colspan="4">
         <div class="row">
             <div class="col-md-3">
-                House Volume
+                Rental House Photo
             </div>
             <div class="col-md-3">
-                {{$rental->property->volume}}
+                <img src="{{asset($rental->property->mainphoto)}}" class="img-fluid" style="width: 100px ; height: 100px">
             </div>
             <div class="col-md-3">
-                House BathRoom
+                <img src="{{asset($rental->property->inphoto)}}" class="img-fluid" style="width: 100px ; height: 100px">
             </div>
             <div class="col-md-3">
-                {{$rental->property->bathroom_qty}}
+                <img src="{{asset($rental->property->roomphoto)}}" class=" img-fluid" style="width: 100px ; height: 100px">
             </div>
 
-        </div> 
-    </th>
+        </th>
+
+    </tr>
+    <tr>
+       <th colspan="4">
+        <div class="row">
+            <div class="col-md-3">
+            House Volume
+        </div>
+        <div class="col-md-3">
+            {{$rental->property->volume}}
+        </div>
+           
+        <div class="col-md-3">
+            House BedRoom
+        </div>
+        <div class="col-md-3">
+            {{$rental->property->bedroom_qty}}
+        </div>
+
+    </div> 
+</th>
+
+</tr>
+<tr>
+   <th colspan="4">
+    <div class="row">
+        <div class="col-md-3">
+            Desciption
+        </div>
+        <div class="col-md-3">
+            {{$rental->property->description}}
+        </div>
+        <div class="col-md-3">
+            House BathRoom
+        </div>
+        <div class="col-md-3">
+            {{$rental->property->bathroom_qty}}
+        </div>
+
+    </div> 
+</th>
 
 </tr>
 

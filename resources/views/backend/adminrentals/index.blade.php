@@ -23,6 +23,18 @@
 					<th>Actions</th>
 				</tr>
 			</thead>
+			<tfoot>
+				<tr>
+					<th>No</th>
+					<th>Rental No</th>
+					<th>Rental Name</th>
+					<th>Owner Name</th>
+					<th>Rental Ph</th>
+					<th>Owner Ph</th>
+					
+					<th>Actions</th>
+				</tr>
+			</tfoot>
 			<tbody>
 				@php $i=1; @endphp
 				@foreach($rentals as $rental)

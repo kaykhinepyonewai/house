@@ -7,7 +7,7 @@
 
 @section('content')
 
-<div class="carousel slide " data-interval="2000" data-ride="carousel">
+{{-- <div class="carousel slide " data-interval="2000" data-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active flu">
   
@@ -21,18 +21,18 @@
   </div>
 </div>
 
-</div>
+</div> --}}
 
 
 
-<div class="my-5">
+<div class="" style="margin-top: 100px">
 
 	<h2 class="d-inline-block  pl-5 text-info">Property List</h2>
 	<a href="{{route('properties.create')}}" class="btn  float-right mr-4 btn-info">
 	<i class="fas fa-plus fa-sm text-white-50"></i>Add Properties</a>
-</div>					
+				
 	
-<div class="container-fluid">
+<div class="container-fluid my-3">
 
 		<div class="row">
 
@@ -49,7 +49,7 @@
 			<div class="col-md-9">
 				<div class="table-responsive">
 					<table class="table table-bordered  text-info">
-						<thead>
+					<thead>
 						<tr>
 							<th>#</th>
 							<th>Code No</th>
@@ -61,8 +61,20 @@
 							<th>Action</th>
 						</tr>
 					</thead>
+					<tfoot>
+						<tr>
+							<th>#</th>
+							<th>Code No</th>
+							<th>Owner Name</th>
+							<th>Post Name</th>
+							<th>Photo</th>
+							<th>Address</th>
+							<th>Phone</th>
+							<th>Action</th>
+						</tr>
+					</tfoot>
 						
-						<tbody id="tbody">
+						<tbody>
 						@php $i=1; @endphp
 						@foreach($properties as $property)
 						<tr>
@@ -118,7 +130,7 @@
 		</div>
 
 	</div>
-
+</div>	
 
 
 

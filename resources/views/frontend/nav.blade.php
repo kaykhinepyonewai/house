@@ -45,17 +45,17 @@
             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
              
 
-             <a class="dropdown-item" href="{{ route('profile') }}"
+             <a class="dropdown-item text-info" href="{{ route('profile') }}"
             ><i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
               {{ __('Profile') }}
             </a>
 
-             <a class="dropdown-item" href="{{ route('rentallists.index') }}"
-            ><i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
+             <a class="dropdown-item text-info" href="{{ route('rentallists.index') }}"
+            >{{-- <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"> --}}<i class="fas fa-th-list "></i></i>
               {{ __('Rental List') }}
             </a>
 
-             <a class="dropdown-item" href="{{ route('logout') }}"
+             <a class="dropdown-item text-info" href="{{ route('logout') }}"
               onclick="event.preventDefault();
               document.getElementById('logout-form').submit();"><i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
               {{ __('Logout') }}

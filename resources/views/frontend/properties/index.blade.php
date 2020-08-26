@@ -26,7 +26,7 @@
  --}}
 
 
-<div class="my-5" {{-- style="margin-top: 20px" --}}>
+<div class="" style="margin-top: 100px">
 
 	<h2 class="d-inline-block  pl-5 text-info">Property List</h2>
 	<a href="{{route('properties.create')}}" class="btn  float-right mr-4 btn-info">
@@ -39,14 +39,14 @@
 	
 
 
-	<div class="container-fluid">
+	<div class="container-fluid my-3">
 
 		<div class="row">
 
 			<div class="col-lg-3">
 
 				{{--  <h1 class="my-4">K <sup>2</sup>&nbsp;Rental House</h1> --}}
-				<div class="list-group">
+				<div class="list-group ">
 					<a href="{{route('ownerwaitings.index')}}" class="list-group-item btn text-info">Waiting List</a>
 					<a href="{{route('properties.index')}}" class="list-group-item btn text-info">Approve List</a>
 					<a href="{{route('rentallists.index')}}" class="list-group-item btn text-info">Rental list</a>
@@ -54,8 +54,8 @@
 
 			</div>
 			<div class="col-md-9">
-				<div class="table-responsive">
-					<table class="table table-bordered  text-info">
+				<div class="table-responsive" >
+					<table class="table table-bordered  text-info" >
 						<thead>
 							<tr>
 								<th>#</th>
@@ -68,6 +68,18 @@
 								<th>Action</th>
 							</tr>
 						</thead>
+						<tfoot>
+							<tr>
+								<th>#</th>
+								<th>Code No</th>
+								<th>Owner Name</th>
+								<th>Post Name</th>
+								<th>Photo</th>
+								<th>Address</th>
+								<th>Phone No</th>
+								<th>Action</th>
+							</tr>
+						</tfoot>
 						
 						<tbody >
 							@php $i=1; @endphp
@@ -130,7 +142,7 @@
 
 	</div>
 
-
+</div>
 @endsection
 
 			

@@ -10,7 +10,7 @@
 @section('content')
 
 	<div class="container">
-	<div class="" style="margin-top: 100px">
+	<div class="font" style="margin-top: 100px">
 		<div class="row">
 			<div class="col-md-4" >
 				

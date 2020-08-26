@@ -16,8 +16,10 @@
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
 
+
+<link href="{{ asset('layouts/css/sb-admin-2.css') }}" rel="stylesheet">
     <!-- Styles -->
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+   
 </head>
 <body>
     <div id="app">
@@ -76,5 +78,30 @@
             @yield('content')
         </main>
     </div>
+
+
+ <!-- Bootstrap core JavaScript-->
+  <script src="{{asset('layouts/vendor/jquery/jquery.min.js')}}"></script>
+  <script src="{{asset('layouts/vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+
+  <!-- Core plugin JavaScript-->
+  <script src="{{asset('layouts/vendor/jquery-easing/jquery.easing.min.js')}}"></script>
+
+  <!-- Custom scripts for all pages-->
+  <script src="{{asset('layouts/js/sb-admin-2.min.js')}}"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+     
 </body>
 </html>

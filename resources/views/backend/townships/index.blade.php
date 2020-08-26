@@ -15,6 +15,13 @@
 							<th>Actions</th>
 						</tr>
 					</thead>
+					<tfoot>
+						<tr>
+							<th>No</th>
+							<th>Name</th>
+							<th>Actions</th>
+						</tr>
+					</tfoot>
 					<tbody>
 						@php $i=1; @endphp
 						@foreach($townships as $township)
