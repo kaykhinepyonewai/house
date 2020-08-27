@@ -27,13 +27,13 @@
 
 </div>
 
-<div class="container-fluid" style="margin-top: 50px">
-  <h2 class="home1 text-center py-5">တစ်ပတ်အတွင်း အကြည့်အများဆုံး ငှားရန် အိမ်ခြံမြေများ</h2>
+<div class="container-fluid" style="margin-top: 10px; background-color: #fafafa">
+  <h2 class="home1 text-center py-5 " style="color: #9dbae0; font-weight: bold;">အိမ်ခြံမြေများ အာလုံးကြည့်ရှုရန်</h2>
 
    @include ('frontend.sidebar')
 
 
-<div class="container img-fluid" {{-- style="background-image: url(frontend/images/bg3.jpg); background-repeat: no-repeat; background-attachment: fixed; opacity: 1" --}}>
+<div class="container-fluid img-fluid" {{-- style="background-image: url(frontend/images/bg3.jpg); background-repeat: no-repeat; background-attachment: fixed; opacity: 1" --}}>
 <div class="row">
 {{--  <div class="col-md-3"> --}}
    
@@ -104,7 +104,7 @@
               <div class="row no-gutters ">
                 <div class="col-md-6">
                   <div class="card-img" >
-                  <img src="${v.mainphoto}" class="card-img-top border-bottom img-fluid top" style="width:400px ; height:300px">
+                  <img src="${v.mainphoto}" class="card-img-top border-bottom img-fluid top" style="width:420px ; height:320px">
 
                   </div>
                 </div>
@@ -136,8 +136,8 @@
                <img src="${v.inphoto}" class="card-img-top border-bottom img-fluid " style="width:400px ; height:150px">
             </div>
               <div class="col-md-12 cardan">
-              <h4 class="text-center" style="color:black">အိပ်ခန်း ပုံများ</h4>
-               <img src="${v.roomphoto}" class="card-img-top border-bottom img-fluid " style="width:400px ; height:150px">
+             
+               <img src="${v.roomphoto}" class="card-img-top border-bottom img-fluid pt-4" style="width:400px ; height:150px">
             </div>
             </div>
             </div>
@@ -175,7 +175,7 @@
               <div class="row no-gutters ">
                 <div class="col-md-6">
                   <div class="card-img" >
-                  <img src="${v.mainphoto}" class="card-img-top border-bottom img-fluid top" style="width:400px ; height:300px">
+                  <img src="${v.mainphoto}" class="card-img-top border-bottom img-fluid top" style="width:420px ; height:320px">
 
                   </div>
                 </div>
@@ -204,11 +204,11 @@
            <div class="row">
            <div class="col-md-12">
                 <h4 class="text-center" style="color:black">အတွင်းခန်း ပုံများ </h4>
-               <img src="${v.inphoto}" class="card-img-top border-bottom img-fluid cardan" style="width:400px ; height:150px">
+               <img src="${v.inphoto}" class="card-img-top border-bottom img-fluid cardan " style="width:400px ; height:150px">
             </div>
               <div class="col-md-12">
-              <h4 class="text-center" style="color:black">အိပ်ခန်း ပုံများ</h4>
-               <img src="${v.roomphoto}" class="card-img-top border-bottom img-fluid cardan" style="width:400px ; height:150px">
+            
+               <img src="${v.roomphoto}" class="card-img-top border-bottom img-fluid cardan pt-4" style="width:400px ; height:150px">
             </div>
             </div>
             </div>
@@ -229,6 +229,7 @@
         $('.filter').click(function()
         {
           var id = $(this).data('id');
+          console.log(id);
           showItems(id);
         })
 

@@ -62,7 +62,7 @@
 							</td>
 
 							<td>
-								<img src="{{asset($property->mainphoto)}}" class="img-fluid h-25 w-100">
+								<img src="{{asset($property->mainphoto)}}" class="img-fluid " style="width: 350px; height: 200px">
 
 							</td>
 
@@ -73,23 +73,36 @@
 
 							
 							<td>
+
+								<a href="{{route('waitingdetail',$property->id)}}" class="btn btn-outline-dark btn-sm">Detail</a>
 								{{-- <a href="" class="btn btn-warning btn-sm">Confirm</a> --}}
 								<form method="POST" action="{{route('approves.update',$property->id)}}" onsubmit="return confirm('Are you sure?')" class="d-inline-block">
 								@csrf
 								@method('PUT')
 								<input type="hidden" name="status" value="approve">
-								<input type="submit" name="btnsubmit" value="Confirm" class="btn btn-dark">
+								<input type="submit" name="btnsubmit" value="Confirm" class="btn btn-outline-dark mt-2">
 							</form>
 
 
 
-								<a href="{{route('waitingdetail',$property->id)}}" class="btn btn-warning btn-sm">Detail</a>
+								
 
 								<form method="POST" action="{{route('properties.destroy',$property->id)}}" onsubmit="return confirm('Are you sure delete?')" class="d-inline-block">
 									@csrf
 									@method('DELETE')
-									<input type="submit" name="btnsubmit" value="Delete" class="btn btn-danger">
+									<input type="submit" name="btnsubmit" value="Delete" class="btn btn-outline-dark mt-2">
 								</form>
+
+								<a href="{{route('approvepropertymail',$property->user->email)}}" class="btn btn-outline-dark btn-sm mt-2">Send Approve Message</a>
+
+								<a href="{{route('rejectpropertymail',$property->user->email)}}" class="btn btn-outline-dark btn-sm mt-2">Send Rejected Message</a>
+
+
+
+
+
+
+
 
 							</td>
 

@@ -71,19 +71,31 @@ class FrontendController extends Controller
    }
 
 
+
+   public function updatereject(Request $request, $id)
+    {
+        $rental = Rental::find($id);
+        $rental->status= $request->status;
+        $rental->save();
+        return redirect()->route('rentallists.index');
+
+    }
+
+
       // Ajax 
     public function getItems(Request $request)
    {
 
       $sid = $request->sid;      
       if ($sid == 0) {
-         $properties = Property::all();
+         $properties = Property::where('status','approve')->get();
       }
       else{
          $properties = Township::find($sid)->properties;
+          // $properties = Township::find($sid)->properties::where('status','approve')->get();
       } 
       
-      
+      // dd($properties);
       return $properties;
    }
 
@@ -94,7 +106,7 @@ class FrontendController extends Controller
       $sname = $request->sname;   
       // dd($name);   
 
-      $properties = Property::where('name','LIKE','%'.$sname.'%')->get();
+      $properties = Property::where([['status','approve'],['name','LIKE','%'.$sname.'%']])->get();
        // dd($properties);
       
       

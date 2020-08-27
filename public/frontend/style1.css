@@ -7,14 +7,14 @@
 
 nav.navbar 
 {
-	box-shadow: 4px 4px 5px #e6cceb;
+	box-shadow: 4px 4px 5px #abcbf5;
 
 }
 nav.shop .navbar-nav .nav-item .nav-link 
 {
 	
-	/*color: #e08bdb;*/
-	color: #fafafa;
+	color: #abcbf5;
+	/*color: #fafafa;*/
 
 	font-family: 'Lobster', cursive;
 	font-size: 1.5rem !important;
@@ -24,7 +24,7 @@ nav.shop .navbar-nav .nav-item .nav-link
 
 a.navbar-brand
 {
-	/*color: #e08bdb;*/
+	color: #abcbf5;
 	font-family: 'Lobster', cursive;
 	font-size: 1.5rem !important;
 }
@@ -41,7 +41,7 @@ nav.shop
 
 nav.navbar-toggler
 {
-	border-color: #e08bdb;
+	border-color: #abcbf5;
 	/*color: #e08bdb; */
 }
 #scroll{
@@ -217,17 +217,17 @@ div.foo a
 div.foo a:hover
 {
 	text-decoration: none;
-	color: #e08bdb;
+	color: #abcbf5;
 }
 
 div.foo h2
 {
-	color: #c4afc2;
+	color: #abcbf5;
 }
 
 footer
 {
-	background-color: #7a5f77;
+	background-color: #5d7fa8;
 	color: black;
 }
 
@@ -251,7 +251,7 @@ a.fot
 
 .pp
 {
-	color: #c4afc2;
+	color: #abcbf5;
 }
 
 .divider
@@ -444,7 +444,7 @@ div.parallx
    
     height: 550px;
 	/*width: 100%;*/
-	background-image: url('images/prot.png');
+	
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -558,22 +558,22 @@ div.order_success
 
 /*About*/
 
-.form1{
+/*.form1{
 	
 	color: #ace5e8;
 	
 	
-}
+}*/
 
 hr.divider{
 	/*max-width: 5.25rem;*/
 	border-width: 0.1rem;
-	border-color: #ace5e8;
+	border-color: #abcbf5;
 }
 hr.divider1{
 	max-width: 5.25rem;
 	border-width: 0.2rem;
-	border-color: #ace5e8;
+	border-color: #abcbf5;
 }
 .scroll-to-top {
     position: fixed;
@@ -789,5 +789,35 @@ hr.divider1{
 }
 
 
+
+
+
+
+.imagebg
+{
+	background-image: url('frontend/images/pcreate.jpg');
+	/*background-image: url(asset('frontend/images/bg3.jpg'));*/
+	background-repeat: no-repeat; 
+	background-attachment: fixed;
+	/*background-color: #e6e8e8;*/
+	/*color: #bbf2f0;*/
+	background-color: #fafafa;
+
+}
+
+.home3
+{
+	color: black;
+	font-family: 'Lobster', cursive;
+	font-size: 25px;
+	color: bold;
+}
+
+.tablecolor
+{
+	color: #799fd1;
+	border-color: #9cb7db;
+	font-weight: bold;
+}
 
 

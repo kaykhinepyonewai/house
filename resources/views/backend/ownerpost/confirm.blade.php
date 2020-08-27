@@ -62,7 +62,7 @@
 							</td>
 
 							<td>
-								<img src="{{asset($property->mainphoto)}}" class="img-fluid h-25 w-100">
+								<img src="{{asset($property->mainphoto)}}" class="img-fluid " style="width: 300px; height: 200px">
 
 							</td>
 

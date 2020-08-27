@@ -23,20 +23,20 @@
 	</div> --}}
 
 
-	<div class="container my-5">
+	<div class="container-fluid my-5" style="background-color: #fafafa">
 
 	<{{-- div class="d-sm-flex align-items-center justify-content-between mb-4">
 		<h1 class="h3 mb-0 text-gray-800">Rental List Detail</h1>
 		<a href="{{route('waiting')}}" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-backward fa-sm text-white-50"></i> Go Back</a>
 	</div> --}}
 
-	<h1 class="h3 mb-0 text-gray-800 text-center pt-5">Rental List Detail</h1>
+	<h1 class="h3 mb-0 text-gray-800 text-center pt-5 tablecolor">Rental List Detail</h1>
 
 
 	
 
 		
-		<div class="row py-5">
+		<div class="row py-5 tablecolor">
 			<div class="col-md-5 row">
 				<div class="col-md-12">
 				<img src="{{asset($property->mainphoto)}}" class="w-100 h-100 img-fluid" >
@@ -112,7 +112,7 @@
 
 		</div>
 
-		<div class="text-center my-5">
+		<div class="text-center my-5 tablecolor">
 		<form method="POST" action="{{route('rentals.store')}}" enctype="multipart/form-data">
 					@csrf
 					{{-- @method('PUT') --}}

@@ -24,7 +24,7 @@
 		<div class="form-group">
 			<label>Photo</label>
 			<input type="file" name="photo" class="form-control-file">
-			<img src="{{asset($category->photo)}}">
+			<img src="{{asset($category->photo)}}" class="img-fluid py-3" style="width: 200px">
 			<input type="hidden" name="oldphoto" value="{{$category->photo}}">
 			@error('photo')
                     <span class="text-danger">{{ $errors->first('photo') }}</span>

@@ -32,7 +32,7 @@
 								
 							</td>
 							
-							<td><img src="{{asset($category->photo)}}"></td>
+							<td><img src="{{asset($category->photo)}}" class="img-fluid w-75" style="width: 300px; height: 200px"></td>
 							<td>
 								
 								<a href="{{route('categories.edit',$category->id)}}" class="btn btn-warning">Edit</a>

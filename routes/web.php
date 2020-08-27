@@ -65,9 +65,27 @@ Route::post('/getitems','FrontendController@getItems')->name('getitems');
 
 Route::post('/search','FrontendController@search')->name('search');
 
+
+
 Route::resource('rentals','RentalController');
 
+
+
 Route::get('sucessful','FrontendController@sucessful')->name('successfulpage');
+
+
+Route::get('mail/{email}','MailController@mail')->name('mail');
+
+
+Route::get('updatereject/{id}','FrontendController@updatereject')->name('updatereject');
+
+Route::get('rejectmail/{email}','MailController@rejectmail')->name('rejectmail');
+
+Route::get('approvepropertymail/{email}','MailController@approvepropertymail')->name('approvepropertymail');
+
+Route::get('rejectpropertymail/{email}','MailController@rejectpropertymail')->name('rejectpropertymail');
+
+
 
 Route::get('/','FrontendController@home')->name('homepage');
 

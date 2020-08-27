@@ -23,32 +23,38 @@
 
 </div> --}}
 
+<div class="parallx img-fluid d-block w-100 container-fluid pb-0" style="background-image: url('{{asset('frontend/images/back.jpg')}}'); padding-top: 250px; height: 600px">
+</div>
 
 
-<div class="" style="margin-top: 100px">
 
-	<h2 class="d-inline-block  pl-5 text-info">Property List</h2>
-	<a href="{{route('properties.create')}}" class="btn  float-right mr-4 btn-info">
-	<i class="fas fa-plus fa-sm text-white-50"></i>Add Properties</a>
+
+
+<div class="tablecolor" style="margin-top: 50px;background-color: #fafafa">
+
+	<h2 class="d-inline-block  pl-5 mt-5">Property List</h2>
+	<a href="{{route('properties.create')}}" class="btn  float-right mr-4 tablecolor mt-5">
+	<i class="fas fa-plus fa-sm text-dark-50"></i>Add Properties</a>
 				
 	
-<div class="container-fluid my-3">
+<div class="container-fluid ">
 
 		<div class="row">
 
 			<div class="col-lg-3">
 
 				{{--  <h1 class="my-4">K <sup>2</sup>&nbsp;Rental House</h1> --}}
-				<div class="list-group">
-					<a href="{{route('ownerwaitings.index')}}" class="list-group-item btn text-info">Waiting List</a>
-					<a href="{{route('properties.index')}}" class="list-group-item btn text-info">Approve List</a>
-					<a href="{{route('rentallists.index')}}" class="list-group-item btn text-info">Rental list</a>
+				<div class="list-group tablecolor">
+					<a href="{{route('ownerwaitings.index')}}" class="list-group-item btn tablecolor"><i class="fa fa-pause" aria-hidden="true"></i>  Waiting List</a>
+					<a href="{{route('properties.index')}}" class="list-group-item btn tablecolor"><i class="fa fa-thumbs-up" aria-hidden="true"></i>  Approve List</a>
+					<a href="{{route('rentallists.index')}}" class="list-group-item btn tablecolor"><i class="fa fa-list" aria-hidden="true"></i> Rental list</a>
 				</div>
 
 			</div>
 			<div class="col-md-9">
+				<h2 class="tablecolor text-center">Waiting List</h2>
 				<div class="table-responsive">
-					<table class="table table-bordered  text-info">
+					<table class="table table-bordered  tablecolor">
 					<thead>
 						<tr>
 							<th>#</th>
@@ -91,7 +97,7 @@
 							</td>
 
 							<td>
-								<img src="{{asset($property->mainphoto)}}" class="img-fluid w-100 h-25">
+								<img src="{{asset($property->mainphoto)}}" class="img-fluid " style="width: 300px; height: 200px">
 
 							</td>
 

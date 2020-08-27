@@ -1,5 +1,6 @@
 @extends('frontendtemplate')
 @include ('frontend.nav')
+@include ('frontend.navUser')
 @section('content')
 
 

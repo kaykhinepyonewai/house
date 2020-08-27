@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Rental;
 use App\Property;
-
+use Mail;
 use Illuminate\Support\Facades\Auth;
 
 class RentalListController extends Controller
@@ -18,6 +18,7 @@ class RentalListController extends Controller
     public function index()
     {
         $rentals = Rental::where([['owner_id',Auth::id()],['status','request']])->get();
+
         // dd($rentals);
         return view('frontend.rentallists.index',compact('rentals'));
     }
@@ -75,8 +76,27 @@ class RentalListController extends Controller
     public function update(Request $request, $id)
     {
          $propertry = Property::find($id);
+         // $propertyname = Property::where()
+
+         // dd($email);
+
+        
+
          $propertry->status= $request->status;
          $propertry->save();
+         
+
+        //  $to_name = 'kaykhinepyonewai13@gmail.com';
+        //  $to_email = 'kaykhinepyonewai@gmail.com';
+
+        //  Mail::send([],[],function($message) use ($to_name, $to_email) {
+        //     $message->to($to_email, $to_name)
+        //     ->subject('Laravel Test Mail');
+        //     $message->from('kaykhinepyonewai13@gmail.com','Test Mail');
+        //     $message->setBody('Khine  Wai');
+
+        // });
+
          return redirect()->route('properties.index');
 
     }

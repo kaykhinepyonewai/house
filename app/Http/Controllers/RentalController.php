@@ -82,6 +82,8 @@ class RentalController extends Controller
     public function show($id)
     {
         $property = Property::find($id);
+        // $user = User::find()
+
         // dd($property);
         return view('frontend.rentals.show',compact('property'));
     }

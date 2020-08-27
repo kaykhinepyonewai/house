@@ -34,6 +34,9 @@ class BackendController extends Controller
     $rentalsrequest = Rental::where('status','request')->get();
     $rentalsrequestcount = $rentalsrequest->count();
 
+    $rentalsreject = Rental::where('status','reject')->get();
+    $rentalsrejectcount = $rentalsreject->count();
+
     $user = User::all();
     $usercount = $user->count();
 
@@ -41,7 +44,7 @@ class BackendController extends Controller
     // $usercount = $user->count();
 
 
-   	return view('backend.dashboard',compact('propertiescount','rentalsapprovecount','rentalscount','rentalsrequestcount','propertiesapprovecount','propertiesrwaitingcount','propertiesrclosecount','usercount'));
+   	return view('backend.dashboard',compact('propertiescount','rentalsapprovecount','rentalscount','rentalsrequestcount','propertiesapprovecount','propertiesrwaitingcount','propertiesrclosecount','rentalsrejectcount','usercount'));
 
 
    }
