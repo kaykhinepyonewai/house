@@ -31,8 +31,10 @@
 
 <div class="pb-0" style="margin-top: 50px; background-color: #fafafa">
 
-	<h2 class="d-inline-block  pl-5 tablecolor mt-5">Property List</h2>
-	<a href="{{route('properties.create')}}" class="btn  float-right mr-4 tablecolor mt-5">
+	<h2 class="d-inline-block  pl-5 tablecolor mt-3">Property List
+		
+	</h2>
+	<a href="{{route('properties.create')}}" class="btn mr-5 float-right mr-4 tablecolor mt-3">
 	<i class="fas fa-plus fa-sm text-black-50"></i>Add Properties</a>
 
 

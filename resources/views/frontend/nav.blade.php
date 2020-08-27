@@ -4,7 +4,7 @@
 <nav class="navbar navbar-expand-lg shop  navbar-dark" id="scroll">
 
     <div class="container">
-      <a class="navbar-brand" {{-- style="color: #abcbf5" --}} href="#"><img src="{{asset('frontend/images/logo1.png')}}" class=" text-light" style="border-radius: 50px; width: 30px; height: 30px "> KK Rental House  <img src="{{asset('frontend/images/logo1.png')}}" class=" text-light" style="border-radius: 50px; width: 30px; height: 30px "></a>
+      <a class="navbar-brand" {{-- style="color: #abcbf5" --}} href="{{route('homepage')}}"><img src="{{asset('frontend/images/logo1.png')}}" class=" text-light" style="border-radius: 50px; width: 30px; height: 30px "> KK Rental House  <img src="{{asset('frontend/images/logo1.png')}}" class=" text-light" style="border-radius: 50px; width: 30px; height: 30px "></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon" style="color: black"></span>
       </button>

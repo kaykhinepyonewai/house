@@ -9,18 +9,18 @@
 
 @section('content')
 
-<div class="carousel slide  " data-interval="2000" data-ride="carousel">
+<div class="carousel slide  " data-interval="2000" data-ride="carousel" style="padding-top: 70px">
   <div class="carousel-inner">
     <div class="carousel-item active flu flu1">
   
      
-      <img src="frontend/images/mainphoto2.jpg" class="d-block w-100 ">
+      <img src="frontend/images/mainphoto2.jpg" class="d-block w-100 " style="height: 500px">
    </div>
    <div class="carousel-item">
-    <img src="frontend/images/mainphoto1.jpg" class="d-block w-100 ">
+    <img src="frontend/images/mainphoto1.jpg" class="d-block w-100 " style="height: 500px">
   </div>
   <div class="carousel-item">
-   <img src="frontend/images/hh1.jpg" class="img-fluid w-100 ">
+   <img src="frontend/images/hh1.jpg" class="img-fluid w-100 " style="height: 500px">
   </div>
 </div>
 
