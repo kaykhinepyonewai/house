@@ -96,7 +96,7 @@
                       <div class="h5 mb-0 font-weight-bold text-gray-800">{{$rentalscount}}</div>
                     </div>
                     <div class="col-auto">
-                      <i class="fas fa-dollar-sign fa-2x text-gray-300"></i>
+                     <i class="fa fa-building fa-2x" aria-hidden="true"></i>
                     </div>
                   </div>
                 </div>
@@ -114,7 +114,7 @@
                       <div class="h5 mb-0 font-weight-bold text-gray-800">{{$rentalsapprovecount}}</div>
                     </div>
                     <div class="col-auto">
-                      <i class="fas fa-dollar-sign fa-2x text-gray-300"></i>
+                     <i class="fa fa-folder fa-2x" aria-hidden="true"></i>
                     </div>
                   </div>
                 </div>
@@ -131,7 +131,7 @@
                       <div class="h5 mb-0 font-weight-bold text-gray-800">{{$rentalsrequestcount}}</div>
                     </div>
                     <div class="col-auto">
-                      <i class="fas fa-dollar-sign fa-2x text-gray-300"></i>
+                      <i class="fa fa-angle-double-right fa-2x" aria-hidden="true"></i>
                     </div>
                   </div>
                 </div>
@@ -148,7 +148,7 @@
                       <div class="h5 mb-0 font-weight-bold text-gray-800">{{$rentalsrejectcount}}</div>
                     </div>
                     <div class="col-auto">
-                      <i class="fas fa-dollar-sign fa-2x text-gray-300"></i>
+                      <i class="fa fa-address-card fa-2x" aria-hidden="true"></i>
                     </div>
                   </div>
                 </div>
@@ -165,7 +165,7 @@
                       <div class="h5 mb-0 font-weight-bold text-gray-800">{{$usercount}}</div>
                     </div>
                     <div class="col-auto">
-                      <i class="fas fa-dollar-sign fa-2x text-gray-300"></i>
+                      <i class="fa fa-user-circle fa-2x" aria-hidden="true"></i>
                     </div>
                   </div>
                 </div>
