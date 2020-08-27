@@ -11,7 +11,7 @@
 
 
 
-<div class="carousel slide " data-interval="2000" data-ride="carousel">
+{{-- <div class="carousel slide " data-interval="2000" data-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active flu">
   
@@ -25,7 +25,11 @@
   </div>
 </div>
 
-</div>
+</div> --}}
+
+<div class="parallx img-fluid d-block w-100 container-fluid pb-0" style="background-image: url('{{asset('frontend/images/filter3.jpg')}}'); padding-top: 250px; height: 500px">
+</div>  
+
 
 <div class="container-fluid" style="margin-top: 10px; background-color: #fafafa">
   <h2 class="home1 text-center py-5 " style="color: #9dbae0; font-weight: bold;">အိမ်ခြံမြေများ အာလုံးကြည့်ရှုရန်</h2>

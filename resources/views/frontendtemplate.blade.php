@@ -94,54 +94,54 @@
 
 
 
-  <div class="container-fluid bg-dark text-center pt-5" >
+  <div class="container-fluid {{-- bg-dark --}} text-center pt-5 fot" style="background-color: #8793a3;" >
     <div class="row">
       <div class="col-lg-3 col-md-4 ">
         <img src="{{asset('frontend/images/fo1.svg')}}" alt="Avatar" class="avatar text-light" style="">
-        <h5 class="pp">Door To Door</h5>
-        <p class="pp">One time Delivery</p>
+        <h5 class="{{-- pp --}}text-light">Easy To Rent</h5>
+        <p class="text-light">One time Service</p>
       </div>
       
       <div class="col-lg-3 col-md-4 ">
         <img src="{{asset('frontend/images/fo2.svg')}}" alt="Avatar" class="avatar">
-        <h5 class="pp">100% Satification</h5>
-        <p class="pp">3 days Return</p>
+        <h5 class="text-light">100% Satification</h5>
+        <p class="text-light">Can Search Online Satification</p>
       </div>
       <div class="col-lg-3 col-md-4 ">
         <img src="{{asset('frontend/images/fo3.svg')}}" alt="Avatar" class="avatar">
-        <h5 class="pp">Customer Services</h5>
-        <p class="pp">Hote Line : 09797363511, 09-3304743</p>
+        <h5 class="text-light">Customer Services</h5>
+        <p class="text-light">Hote Line : 09797363511, 09-3304743</p>
       </div>
       <div class="col-lg-3 col-md-4 ">
         <img src="{{asset('frontend/images/f04.svg')}}" alt="Avatar" class="avatar">
-        <h5 class="pp">Cash On Delivery</h5>
-        <p class="pp">Online Payment</p>
+        <h5 class="text-light">Cash On Face To Face</h5>
+        <p class="text-light">Contact Payment</p>
       </div>
     </div>
     <hr class="w-100 divider">
 
 
 
-<div class="bg-dark py-5 text-light px-5 foo">
+<div class="{{-- bg-dark --}} py-5 text-light px-5 foo">
     <div class="container">
       <div class="row">
         <div class="col-lg-4 col-md-4 col-sm-12">
-          <h2 class="px-4">About</h1>
-            <p class="py-4 px-4">K Online Shop is a Buy marketplace for Myanmar (Burma) and designed to make it simple and easy to use. You can buy new items with each other via the in-app chat function or make the direct phone call to make the deal faster.
+          <h2 class="px-4 text-light">About</h1>
+            <p class="py-4 px-4">By Using Our Website The Landlord Is Allowed To Post Information About The House Of Their Choice, And The Tenant Is Fully Informed And Comfortable To Rent, And Both Have Easy Access To Each Other...
             </p>
           </div>
           <div class="col-lg-4 col-md-4 col-sm-12">
-            <h2 class="px-2">Link</h1>
+            <h2 class="px-2 text-light">Link</h1>
               <div class="py-4 px-4">
-                <p><a href="index.php"><span class="link pr-2"><i class="fa fa-link" aria-hidden="true"></i></span>  Home</a></p>
-                <p><a href="product.php" ><span class="link pr-2"><i class="fa fa-link" aria-hidden="true"></i></span>  Product</a></p>
-                <p><a href="about.php"><span class="link pr-2"><i class="fa fa-link" aria-hidden="true"></i></span>  About</a></p>
-                <p><a href="contact.php"><span class="link pr-2"><i class="fa fa-link" aria-hidden="true"></i></span>  Contact</a></p>
+                <p><a href="{{route('homepage')}}"><span class="link pr-2"><i class="fa fa-link" aria-hidden="true"></i></span>  Home</a></p>
+                <p><a href="{{route('propertypage')}}" ><span class="link pr-2"><i class="fa fa-link" aria-hidden="true"></i></span> Rental Property</a></p>
+                <p><a href="{{route('about')}}"><span class="link pr-2"><i class="fa fa-link" aria-hidden="true"></i></span>  About</a></p>
+                <p><a href="{{route('contact')}}"><span class="link pr-2"><i class="fa fa-link" aria-hidden="true"></i></span>  Contact</a></p>
               </div>
 
             </div>
             <div class="col-lg-4 col-md-4 col-sm-12">
-              <h2 class="px-2">Address</h1>
+              <h2 class="px-2 text-light">Address</h1>
                 <div class="block-23 mb-3 py-4 px-4">
                   <p>
                     <span class="link pr-2"><i class="fa fa-address-card f" aria-hidden="true"></i></span><span class="text"> Tanpawaddy,Chan Mya Thar Si Township, Mandalay</span>
@@ -176,7 +176,7 @@
 
   <footer class="footer {{-- fixed-bottom --}}">
       <div class="container  text-center  text-monospace">
-        <p class="footertext m-0">Copyright &copy; All Right Result | Powered By <a href="http://kaykhinepyonewai.me/" class="fot"> Kay </a></p>
+        <p class="footertext m-0">Copyright &copy; All Right Result | Powered By <a href="http://kaykhinepyonewai.me/" class="fot"> KK </a></p>
         
       </div>
 
@@ -184,8 +184,8 @@
     </footer>
 
 
-  <script src="{{asset('frontend/jquery/jquery.min.js')}}"></script>
-  <script type="text/javascript" src="{{asset('frontend/bootstrap/js/jquery.min.js')}}"></script>
+  
+  <script  src="{{asset('frontend/bootstrap/js/jquery.min.js')}}"></script>
   <script src="{{asset('frontend/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
 
 

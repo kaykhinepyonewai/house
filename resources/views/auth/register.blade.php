@@ -96,7 +96,7 @@
   <div class="container ">
 
     <!-- Outer Row -->
-    <div class="row justify-content-center text-info">
+    <div class="row justify-content-center ">
 
       <div class="col-xl-10 col-lg-12 col-md-9">
 
@@ -111,7 +111,7 @@
                 <div class="col-md-12">
                        <div class="p-3">
                           <div class="text-center">
-                            <h1 class="h4 text-info mb-4">Create a Account!</h1>
+                            <h1 class="h4  mb-4">Create a Account!</h1>
                         </div>
                     </div>
                 </div>
@@ -174,9 +174,10 @@
                             <label for="password-confirm" class="col-md-4 col-form-label text-md-right">{{ __('Role') }}</label>
 
                             <div class="col-md-6 text-info">
-                                <select name="role">
-                                    <option value="owner">Owner</option>
+                                <select name="role" class="form-control form-check">
+                                    
                                     <option value="customer">Customer</option>
+                                    <option value="owner">Owner</option>
                                 </select>
                             </div>
                         </div>
@@ -184,7 +185,7 @@
 
                         <div class="form-group row mb-3">
                             <div class="col-md-6 offset-md-4">
-                                <button type="submit" class="btn btn-outline-info">
+                                <button type="submit" class="btn btn-outline-dark">
                                     {{ __('Register') }}
                                 </button>
                             </div>

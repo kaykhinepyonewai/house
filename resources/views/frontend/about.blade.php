@@ -99,10 +99,10 @@
     </div>
   </div>
 </div>
-<a href="#uparrow" class="float-right " style="display: inline;">
+{{-- <a href="#uparrow" class="float-right " style="display: inline;">
 
 <i class="fas fa-arrow-circle-up scroll-to-top fa-3x"></i>
-</a>
+</a> --}}
 	
 
 	

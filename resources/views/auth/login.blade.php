@@ -85,7 +85,7 @@
   <div class="container ">
 
     <!-- Outer Row -->
-    <div class="row justify-content-center text-info">
+    <div class="row justify-content-center ">
 
       <div class="col-xl-10 col-lg-12 col-md-9">
 
@@ -100,7 +100,7 @@
                 <div class="col-md-12">
                        <div class="p-3">
                           <div class="text-center">
-                            <h1 class="h4 text-info mb-4">Welcome Back!</h1>
+                            <h1 class="h4 mb-4">Welcome Back!</h1>
                         </div>
                     </div>
                 </div>
@@ -150,12 +150,12 @@
 
                         <div class="form-group row mb-3">
                             <div class="col-md-8 offset-md-4">
-                                <button type="submit" class="btn btn-outline-info">
+                                <button type="submit" class="btn btn-outline-dark">
                                     {{ __('Login') }}
                                 </button>
 
                                 @if (Route::has('password.request'))
-                                    <a class="btn text-info btn-link" href="{{ route('password.request') }}">
+                                    <a class="btn  btn-link" href="{{ route('password.request') }}">
                                         {{ __('Forgot Your Password?') }}
                                     </a>
                                 @endif

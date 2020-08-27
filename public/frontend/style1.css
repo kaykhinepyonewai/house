@@ -8,23 +8,28 @@
 nav.navbar 
 {
 	box-shadow: 4px 4px 5px #abcbf5;
+	background-color: #8793a3 !important;
 
 }
 nav.shop .navbar-nav .nav-item .nav-link 
 {
 	
-	color: #abcbf5;
-	/*color: #fafafa;*/
-
 	font-family: 'Lobster', cursive;
 	font-size: 1.5rem !important;
-	
-	
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #fff;
+}
+
+.fot
+{
+	background-color: #8793a3;
 }
 
 a.navbar-brand
 {
-	color: #abcbf5;
+	/*color: #abcbf5;*/
 	font-family: 'Lobster', cursive;
 	font-size: 1.5rem !important;
 }
@@ -42,8 +47,9 @@ nav.shop
 nav.navbar-toggler
 {
 	border-color: #abcbf5;
-	/*color: #e08bdb; */
+	color: black;
 }
+
 #scroll{
 	/*position: fixed;*/
 	width: 100%;
@@ -89,7 +95,7 @@ nav.navbar-toggler
 
 div.dropdown-menu a:hover
 {
-	background-color: #dbc5da; 
+	background-color: #8793a3; 
 }
 
 .brand
@@ -227,13 +233,14 @@ div.foo h2
 
 footer
 {
-	background-color: #5d7fa8;
+	/*background-color: #5d7fa8;*/
+	background-color: #7c8794;
 	color: black;
 }
 
 a.fot
 {
-	color: #c4afc2;
+	/*color: #c4afc2;*/
 	text-decoration: none;
 }
 
