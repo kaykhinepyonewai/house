@@ -3,7 +3,7 @@
 <nav class="navbar navbar-expand-lg shop  bg-dark navbar-dark" id="scroll">
 
     <div class="container">
-      <a class="navbar-brand" href="#">KK Rental House</a>
+      <a class="navbar-brand" href="#"><img src="{{asset('frontend/images/logo1.png')}}" class=" text-light" style="border-radius: 50px; width: 30px; height: 30px "> KK Rental House  <img src="{{asset('frontend/images/logo1.png')}}" class=" text-light" style="border-radius: 50px; width: 30px; height: 30px "></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>

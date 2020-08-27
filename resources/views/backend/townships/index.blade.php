@@ -3,7 +3,7 @@
 <div class="container-fluid">
 	<h2 class="d-inline-block">Township List</h2>
 	
-	<a href="{{route('townships.create')}}" class="btn btn-info float-right mr-4 ">
+	<a href="{{route('townships.create')}}" class="btn btn-primary float-right mr-4 ">
 		<i class="fas fa-plus fa-sm text-white-50"></i>Add Townships</a>
 		<div class="card-body">
 			<div class="table-responsive">
@@ -34,11 +34,11 @@
 							
 							<td>
 								
-								<a href="{{route('townships.edit',$township->id)}}" class="btn btn-warning">Edit</a>
+								<a href="{{route('townships.edit',$township->id)}}" class="btn btn-outline-dark">Edit</a>
 								<form method="POST" action="{{route('townships.destroy',$township->id)}}" onsubmit="return confirm('Are you sure delete?')" class="d-inline-block">
 									@csrf
 									@method('DELETE')
-									<input type="submit" name="btnsubmit" value="Delete" class="btn btn-danger">
+									<input type="submit" name="btnsubmit" value="Delete" class="btn btn-outline-dark">
 								</form>
 								
 							</td>

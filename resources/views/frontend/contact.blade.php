@@ -50,7 +50,7 @@
 				</div>
 				<div class="col-md-10">
 					<p class="font-weight-bold my-3">Email<br>
-					restaurant@gmail.com</p>
+					kkrentalhouse@gmail.com</p>
 				</div>
 			</div>
 		</div>

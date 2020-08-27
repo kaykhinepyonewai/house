@@ -47,7 +47,7 @@
 					<td>{{$rental->property->phoneno}}</td>
 					<td>
 					<a href="{{route('adminrentals.show',$rental->id)}}">
-						<span class=" btn btn-outline-info">Detail</span>
+						<span class=" btn btn-outline-primary">Detail</span>
 						
 					</a>
 

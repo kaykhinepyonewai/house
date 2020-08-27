@@ -43,7 +43,7 @@
                       <div class="h5 mb-0 font-weight-bold text-gray-800">{{$propertiesapprovecount}}</div>
                     </div>
                     <div class="col-auto">
-                      <i class="fas fa-dollar-sign fa-2x text-gray-300"></i>
+                      <i class="fa fa-bell fa-2x" aria-hidden="true"></i>
                     </div>
                   </div>
                 </div>
@@ -60,7 +60,7 @@
                       <div class="h5 mb-0 font-weight-bold text-gray-800">{{$propertiesrwaitingcount}}</div>
                     </div>
                     <div class="col-auto">
-                      <i class="fas fa-dollar-sign fa-2x text-gray-300"></i>
+                     <i class="fa fa-bullhorn fa-2x" aria-hidden="true"></i>
                     </div>
                   </div>
                 </div>
@@ -78,7 +78,7 @@
                       <div class="h5 mb-0 font-weight-bold text-gray-800">{{$propertiesrclosecount}}</div>
                     </div>
                     <div class="col-auto">
-                      <i class="fas fa-dollar-sign fa-2x text-gray-300"></i>
+                      <i class="fa fa-database fa-2x" aria-hidden="true"></i>
                     </div>
                   </div>
                 </div>

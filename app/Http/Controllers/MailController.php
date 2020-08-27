@@ -58,7 +58,7 @@ class MailController extends Controller
       $message->to($to_email, $to_name)
       ->subject('Property Request is Approved By Admin');
       $message->from('kaykhinepyonewai13@gmail.com','Test Mail');
-      $message->setBody('Your Property Rejuest for Rent  is Approved, Congrulation');
+      $message->setBody('Your Property Request for Rent  is Approved, Congrulation');
     
   });
 

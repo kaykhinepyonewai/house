@@ -1,18 +1,18 @@
 @extends('backendtemplate')
 @section('content')
 <!-- DataTales Example -->
-<a class="sidebar-brand d-flex align-items-center justify-content-center text-info">
+<a class="sidebar-brand d-flex align-items-center justify-content-center text-primary">
     <div class="sidebar-brand-icon rotate-n-15">
       <i class="fas fa-laugh-wink fa-5" style='font-size:50px'></i>
   </div>
-  <h5 class="sidebar-brand-text mx-1 d-block text-info">K <sup>2</sup>&nbsp;Rental House</h5>
+  <h5 class="sidebar-brand-text mx-1 d-block ">K <sup>2</sup>&nbsp;Rental House</h5>
 
 </a>
 <tr>
 
-    <p class="text-center text-info">Mandalay Region,Sintgaing Township,Paleik.<br>Tel:09770106551</p>
+    <p class="text-center text-primary">Mandalay Region,Sintgaing Township,Paleik.<br>Tel:09770106551</p>
 </tr>
-<a href="{{route('adminrentals.index')}}" class=" btn btn-sm btn-info  float-right "><i class="fas fa-backward fa-sm text-white-50"></i> Go Back</a>
+<a href="{{route('adminrentals.index')}}" class=" btn btn-sm btn-primary  float-right "><i class="fas fa-backward fa-sm text-white-50"></i> Go Back</a>
 
 
 

@@ -6,12 +6,12 @@
 
 <!-- Item List Table -->
 	<div class="card shadow mb-4" style="margin-top: 100px">
-		<div class="home1">
-			<h2 class="home1 text-center " style="font-size: 50px;">Customer Profile Page </h2>
+		<div class="tablecolor">
+			<h2 class="home1 text-center " style="font-size: 40px;"> Profile Page </h2>
 			<table class="table table-bordered text-center">
 				<thead>
 					<tr>
-			<th> Name:</th>
+			<th class=""> Name:</th>
 			<th>{{Auth::user()->name}}</th>
 			</tr>
 			<tr>

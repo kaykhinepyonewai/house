@@ -80,6 +80,7 @@ class RegisterController extends Controller
         if ($data['role']=='owner') 
         {
            $user->assignRole('owner');
+
             return $user;
         }
         else if($data['role']=='customer')
@@ -91,7 +92,7 @@ class RegisterController extends Controller
             $user->assignRole('admin');
             return $user;
         }
-
+        // return redirect('/');
         // $user->assignRole('customer');
         // return $user;
         

@@ -23,7 +23,7 @@
 
 </div> --}}
 
-<div class="parallx img-fluid d-block w-100 container-fluid pb-0" style="background-image: url('{{asset('frontend/images/back.jpg')}}'); padding-top: 250px; height: 600px">
+<div class="parallx img-fluid d-block w-100 container-fluid pb-0" style="background-image: url('{{asset('frontend/images/back.jpg')}}'); padding-top: 250px; height: 480px">
 </div>
 
 

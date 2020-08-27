@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>K Online Shop</title>
+  <title>KK Rental House Website For Mandalay</title>
   <meta charset="UTF-8">
- <!--  <link rel="icon" type="text/css" href="images/hello.jpg" class="img-profile rounded-circle"> -->
+  <link rel="icon" type="text/css" href="{{asset('frontend/images/logo1.png')}}" class="img-profile rounded-circle">
   <link rel="stylesheet" type="text/css" href="{{asset('frontend/bootstrap/css/bootstrap.min.css')}}">
     <link href="{{asset('backend/vendor/fontawesome-free/css/all.min.css')}}" rel="stylesheet" type="text/css">
     <link rel="stylesheet" type="text/css" href="{{asset('frontend/style1.css')}}">
@@ -144,14 +144,14 @@
               <h2 class="px-2 text-light">Address</h1>
                 <div class="block-23 mb-3 py-4 px-4">
                   <p>
-                    <span class="link pr-2"><i class="fa fa-address-card f" aria-hidden="true"></i></span><span class="text"> Tanpawaddy,Chan Mya Thar Si Township, Mandalay</span>
+                    <span class="link pr-2"><i class="fa fa-address-card f" aria-hidden="true"></i></span><span class="text"> Between 70-71 Street/ 40Street, Maharaungmyay Township ,Mandalay</span>
                   </p>
                   <p>
                     <span class="link pr-2"><i class="fa fa-phone f" aria-hidden="true"></i></span><span class="text"> +09797363511</span>
                   </p>
 
                   <p>
-                    <span class="link pr-2"><i class="fa fa-envelope f" aria-hidden="true"></i></span><span class="text"> kaykhinepyonewai13<br>@gmail.com</span>
+                    <span class="link pr-2"><i class="fa fa-envelope f" aria-hidden="true"></i></span><span class="text"> kkrentalhouse<br>@gmail.com</span>
                     
                   </p>
                   

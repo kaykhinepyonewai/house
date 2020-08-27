@@ -56,7 +56,7 @@ class FrontendController extends Controller
      public function property($value='')
    {
     // $items = Item::orderBy('id','desc')->take(6)->get();
-      $towships =Township::orderBy('id','desc')->take(3)->get();
+      $towships =Township::orderBy('id','desc')->get();
     // dd($towships);
     return view('frontend.filterproperty',compact('towships'));
    }
@@ -91,7 +91,10 @@ class FrontendController extends Controller
          $properties = Property::where('status','approve')->get();
       }
       else{
-         $properties = Township::find($sid)->properties;
+         // $properties = Township::find($sid)->properties;
+        $properties = Property::where([['status','approve'],['township_id',$sid]])->get();
+        // dd($properties);
+
           // $properties = Township::find($sid)->properties::where('status','approve')->get();
       } 
       

@@ -13,13 +13,14 @@
   <div class="carousel-inner">
     <div class="carousel-item active flu flu1">
   
-     <img src="frontend/images/mainphoto.jpg" class="img-fluid w-100 ">
+     
+      <img src="frontend/images/mainphoto2.jpg" class="d-block w-100 ">
    </div>
    <div class="carousel-item">
     <img src="frontend/images/mainphoto1.jpg" class="d-block w-100 ">
   </div>
   <div class="carousel-item">
-    <img src="frontend/images/mainphoto2.jpg" class="d-block w-100 ">
+   <img src="frontend/images/hh1.jpg" class="img-fluid w-100 ">
   </div>
 </div>
 
