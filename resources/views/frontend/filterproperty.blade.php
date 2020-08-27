@@ -173,7 +173,7 @@
         
          <div class="col-md-8 col-sm-8 my-5">
             <div class="card cardan w-100">
-              <div class="card-header bg-dark home1">
+               <div class="card-header home2" style="background-color: #7e8b96;color: white">
                 ${v.name}
               </div>
               <div class="row no-gutters ">
