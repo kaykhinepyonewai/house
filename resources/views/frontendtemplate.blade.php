@@ -104,7 +104,7 @@
       
       <div class="col-lg-3 col-md-4 ">
         <img src="{{asset('frontend/images/fo2.svg')}}" alt="Avatar" class="avatar">
-        <h5 class="text-light">100% Satification</h5>
+        <h5 class="text-light">150% Satification</h5>
         <p class="text-light">Can Search Online Satification</p>
       </div>
       <div class="col-lg-3 col-md-4 ">
