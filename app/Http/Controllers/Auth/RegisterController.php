@@ -8,6 +8,9 @@ use App\User;
 use Illuminate\Foundation\Auth\RegistersUsers;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
+
+// use Illuminate\Foundation\Auth\AuthenticatesUsers;
+// use Illuminate\Http\Request;
 // use Spatie\Permission\Models\Role;
 // use Spatie\Permission\Models\Permission;
 // use Spatie\Permission\Traits\HasRoles;
@@ -32,6 +35,7 @@ class RegisterController extends Controller
      *
      * @var string
      */
+
     protected $redirectTo = RouteServiceProvider::HOME;
 
     /**
@@ -65,6 +69,9 @@ class RegisterController extends Controller
      * @param  array  $data
      * @return \App\User
      */
+
+
+
     protected function create(array $data)
     {
         // $roleuser = $data['role'];
@@ -79,17 +86,19 @@ class RegisterController extends Controller
 
         if ($data['role']=='owner') 
         {
+            $this->redirectTo = "/";
            $user->assignRole('owner');
 
             return $user;
         }
         else if($data['role']=='customer')
         {
+            $this->redirectTo = "/";
             $user->assignRole('customer');
             return $user;
         }else
         {
-            $user->assignRole('admin');
+            $this->redirectTo = "/dashboard";
             return $user;
         }
         // return redirect('/');
