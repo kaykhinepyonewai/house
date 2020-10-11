@@ -104,7 +104,7 @@
       
       <div class="col-lg-3 col-md-4 ">
         <img src="{{asset('frontend/images/fo2.svg')}}" alt="Avatar" class="avatar">
-        <h5 class="text-light">150% Satification</h5>
+        <h5 class="text-light">100% Satification</h5>
         <p class="text-light">Can Search Online Satification</p>
       </div>
       <div class="col-lg-3 col-md-4 ">
@@ -144,7 +144,7 @@
               <h2 class="px-2 text-light">Address</h1>
                 <div class="block-23 mb-3 py-4 px-4">
                   <p>
-                    <span class="link pr-2"><i class="fa fa-address-card f" aria-hidden="true"></i></span><span class="text"> Between 70-71 Street/ 40Street, Maharaungmyay Township ,Mandalay</span>
+                    <span class="link pr-2"><i class="fa fa-address-card f" aria-hidden="true"></i></span><span class="text"> {{-- Between 70-71 Street/ 40Street, Maharaungmyay Township , --}}Mandalay</span>
                   </p>
                   <p>
                     <span class="link pr-2"><i class="fa fa-phone f" aria-hidden="true"></i></span><span class="text"> +09797363511</span>

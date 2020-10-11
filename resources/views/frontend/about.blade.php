@@ -10,18 +10,19 @@
 
   Your browser does not support the video tag.
 </video>
-<h1 class="tablecolor text-center" >Admin</h1>
+<h1 class="tablecolor text-center" >Developer</h1>
 <hr class="divider1" > 
 <div class="container my-5">
   <div class="row">
-    <div class="col-md-6 pl-5">
+    <div class="offset-2"></div>
+    <div class="col-md-7 pl-5">
       <div class="row">
         <div class="col-md-6 col-sm-6">
       <img src="{{asset('frontend/images/profile1.jpg')}}" style="border-radius: 50%; width: 200px; height: 200px;">
       </div>
        <div class="col-md-6 col-sm-6 justify-content-center pr-5  font-weight-bold tablecolor" style="line-height: 50px;">
       
-      Name :Kay Khine pyone Wai<br>Address   :Mandalay <br> Phone :09-1234567
+      Name :Kay Khine Pyone Wai<br>Address   :Mandalay <br> Phone :09-797363511
     </div>
     </div>
 
@@ -30,20 +31,22 @@
       
       Name &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;   :Kay Khine pyone Wai<br>Address &nbsp; &nbsp; &nbsp; :Mandalay <br> Phone &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;:09-1234567
     </div> --}}
-    <div class="col-md-6 pl-5">
+    {{-- <div class="col-md-6 pl-5">
       <div class="row">
         <div class="col-md-6 col-sm-6">
       <img src="{{asset('frontend/images/profile.jpg')}}" style="border-radius: 50%; width: 200px; height: 200px;">
       </div>
-   {{--  </div> --}}
+  
     <div class="col-md-6 col-sm-6  font-weight-bold tablecolor" style="line-height: 50px">
-      Name {{-- &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; --}}   :Khaing Hnin Si<br>Address {{-- &nbsp; &nbsp; &nbsp; --}} :Mandalay Region,Paleik <br> Phone {{-- &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; --}}:09-770106551
+      Name :Khaing Hnin Si<br>Address  :Mandalay Region,Paleik <br> Phone :09-770106551
     </div>
   </div>
-</div>
+</div> --}}
 
 </div>
 </div>
+
+
 <h1 class="tablecolor text-center my-3"> About</h1>
 <hr class="divider1" >
 
